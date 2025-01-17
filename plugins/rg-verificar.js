@@ -46,14 +46,14 @@ let userNationalityData = api.data.result;
     
     let sn = createHash('md5').update(m.sender).digest('hex')
     let regbot = `┏━━━━━━━━━━━━━━━━━━⬣
-┃⋄ *🎄 𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐎 - 𝐂𝐑𝐎𝐖𝐁𝐎𝐓*
+┃⋄ *🫐 𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐎 - 𝐏𝐑𝐀𝐊𝐁𝐎𝐓*
 ┗━━━━━━━━━━━━━━━━━━⬣\n`
     regbot += `•┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•\n`
-    regbot += `「💛」𝐍𝐨𝐦𝐛𝐫𝐞: ${name}\n`
-    regbot += `「💛」𝐄𝐝𝐚𝐝: ${age} años\n`
-    regbot += `「💛」𝐏𝐚𝐢𝐬: ${userNationality}\n`
+    regbot += `「💙」𝐍𝐨𝐦𝐛𝐫𝐞: ${name}\n`
+    regbot += `「💙」𝐄𝐝𝐚𝐝: ${age} años\n`
+    regbot += `「💙」𝐏𝐚𝐢𝐬: ${userNationality}\n`
     regbot += `•┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•\n`
-    regbot += `「💝」𝐑𝐞𝐜𝐨𝐦𝐩𝐞𝐧𝐬𝐚𝐬:\n> `
+    regbot += `「💙」𝐑𝐞𝐜𝐨𝐦𝐩𝐞𝐧𝐬𝐚𝐬:\n> `
     regbot += `• 15 Estrellas 🌟\n> `
     regbot += `• 5 CrowCoins 🪙\n> `
     regbot += `• 245 Experiencia 💸\n> `
@@ -68,7 +68,7 @@ let userNationalityData = api.data.result;
             externalAdReply: {
                 title: '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰',
                 body: dev,
-                thumbnailUrl: 'https://files.catbox.moe/cfun7m.jpg',
+                thumbnailUrl: 'https://files.catbox.moe/o6uocz.jpg',
                 sourceUrl: 'https://whatsapp.com/channel/0029Vb1kImN42Dcn99y1rW0E',
                 mediaType: 1,
                 showAdAttribution: true,
