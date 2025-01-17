@@ -25,7 +25,7 @@ let handler = async (message, { conn, text }) => {
       ]);
     }
 
-    await conn.sendCarousel(message.chat, '', `\`\`\`¡Hola! A continuación te muestro la lista de animes encontrados💛\`\`\``, "", messages, message);
+    await conn.sendCarousel(message.chat, '', `\`\`\`¡Hola! A continuación te muestro la lista de animes encontrados🚀\`\`\``, "", messages, message);
   } catch (error) {
     await conn.reply(message.chat, error.toString(), message);
   }
