@@ -7,10 +7,10 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
   }
   const pesan = args.join` `;
   const colombia = `💌 *Mensaje:* ${pesan}`;
-  let teks = `💛 *Revivan Plantas*\n${colombia}\n\n┏ ✰𝐂𝐫𝐨𝐰𝐁𝐨𝐭-𝐒𝐓\n`;
+  let teks = `🚀 *Revivan hijos de puta*\n${colombia}\n\n┏ ☠︎︎𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛-2.0\n`;
   
   for (const mem of participants) {
-    teks += `┋🔱@${mem.id.split('@')[0]}\n`;
+    teks += `┋🚀@${mem.id.split('@')[0]}\n`;
   }
   
   teks += `┗ ${dev}`;
