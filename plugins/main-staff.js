@@ -12,7 +12,6 @@ let staff = `🚀 *EQUIPO DE AYUDANTES*
 🧿 *Número:* Wa.me/573185444099
 `
 
-
 • *Psycho*  
 ♟️ *Rol:* COLABORADOR DEL BANNER Y EDICIONES EXTRAS 
 ♟️ *Número:* Wa.me/573185444099
