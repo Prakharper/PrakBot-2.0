@@ -7,8 +7,8 @@ let staff = `🚀 *EQUIPO DE AYUDANTES*
 🩸 *Rol:* Experiencia En Javascript y html
 🩸 *Número:* Wa.me/529983694618
 
-• *MATTEUS COLABORADOR DEL VIDEO DEL MENÚ Y SOBRINO FAVORITO DE PRAK*  
-🧿 *Rol:* Experiencia En Javascript, Mantenimiento y Editor Profesional
+• *MATTEUS*  
+🧿 *Rol:* COLABORADOR DEL VIDEO DEL MENÚ Y SOBRINO FAVORITO DE PRAK
 🧿 *Número:* Wa.me/573185444099
 `
 await conn.sendFile(m.chat, 'https://files.catbox.moe/sx42eg.jpg', 'brook.jpg', staff.trim(), fkontak, true, {
