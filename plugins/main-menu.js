@@ -33,18 +33,18 @@ const defaultMenu = {
 “ *「🚀」 ¡Hola! %name soy ${botname}*, *%greeting* ❒”
 
 ╔━━━━━ *⊱INFO - BOT⊰*
-✦  👤 *Cliente:* %name
-✧  ❤️‍🔥 *Exp:* %exp
+✦  🚀 *Cliente:* %name
+✧  🧿 *Exp:* %exp
 ✦  🌟 *Estrellas:* %estrellas
-✧  👑 *Nivel:* %level
+✧  🤖 *Nivel:* %level
 ✦  🌠 *Rango:* %role
 ╚━━━━━━━━━━━━━━
 %readmore
 ╔━━━━━ *⊱INFO - USER⊰*
 ✧  🤖 *Bot:* ${nombrebot} 
-✦  🔱 *Modo:* Privado VIP 
+✦  🚀 *Modo:* Privado VIP 
 ✧  ✨ *Baileys:* Multi Device
-✦  🪐 *Tiempo Activo:* %muptime
+✦  🧿 *Tiempo Activo:* %muptime
 ✧  💫 *Usuarios:* %totalreg 
 ╚━━━━━━━━━━━━━━
 %readmore
