@@ -26,10 +26,6 @@ if (/^I'm Fz|im fz$/i.test(m.text)) {
 conn.reply(m.chat, `*Psycho🔥 es la pajeadora de mi creador* 🥵🥵`, m, rcanal, )
 }
 
-if (/^porno|xxx|gore/i.test(m.text)) {
-conn.reply(m.chat, `*Escucha maldita sabandija ni se te ocurra enviar ese tipo de contenido 🤬*`, m, rcanal, )
-}
-
 if (/^a$/i.test(m.text)) {
 conn.reply(m.chat, `*rroz y pollo* 😋👌`, m, rcanal, )
 }
@@ -57,16 +53,8 @@ Tenemos:
 > *Consulta Los Precios [🌠]*`, m, rcanal, )
 }
 
-if (/^Conoces a Legendary/i.test(m.text)) { 
-conn.reply(m.chat, `*Si Lo conozco, Es Una Zorra caliente 🥵❤️‍🔥*`, m, rcanal, )
-}
-
 if (/^Lan/i.test(m.text)) {
 conn.reply(m.chat, `*Lan se la chupa 3 veces seguidas en 5 minutos a mí creador🥵🔥*`, m, rcanal, )
-}
-
-if (/^Nodoka/i.test(m.text)) { 
-conn.reply(m.chat, `*Nodoka Mi Amor, Culona 🥵❤️‍🔥*`, m, rcanal, )
 }
 
 if (/^Bot en decadencia/i.test(m.text)) {
