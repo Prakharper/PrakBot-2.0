@@ -18,7 +18,7 @@ if (/^Bot de mierda/i.test(m.text)) {
 conn.reply(m.chat, `*No digas mamadas, Meriyein*`, m, rcanal, )
 }
 
-if (/^destroy|prak|Aamōn$/i.test(m.text)) {
+if (/^Aamon|Aamōn$/i.test(m.text)) {
 conn.reply(m.chat, `*Aamōn🔥 es la perrita de mi creador* 🥵🥵`, m, rcanal, )
 }
 
