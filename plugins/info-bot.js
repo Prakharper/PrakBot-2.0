@@ -5,7 +5,7 @@ handler.all = async function(m) {
 const chat = global.db.data.chats[m.chat];
 if (chat.isBaneed) return
 if (/^bot$/i.test(m.text)) {
-conn.reply(m.chat, `🌠 ¡Hola! Soy CrowBot, en que puedo ayudarte hoy?\n\n✰ Usa *.menu* para ver mis comandos.`, m, rcanal, )
+conn.reply(m.chat, `🌠 ¡Hola! Soy PrakBot, en que puedo ayudarte hoy?\n\n✰ Usa *.menu* para ver mis comandos.`, m, rcanal, )
 }
 /*if (/^que|q$/i.test(m.text)) {
 conn.reply(m.chat, `*so*`, m, rcanal, )
@@ -18,12 +18,12 @@ if (/^Bot de mierda/i.test(m.text)) {
 conn.reply(m.chat, `*No digas mamadas, Meriyein*`, m, rcanal, )
 }
 
-if (/^destroy|Wilker|Destroy$/i.test(m.text)) {
-conn.reply(m.chat, `*Destroy🔥 es la perrita de mi creador* 🥵🥵`, m, rcanal, )
+if (/^destroy|prak|Aamōn$/i.test(m.text)) {
+conn.reply(m.chat, `*Aamōn🔥 es la perrita de mi creador* 🥵🥵`, m, rcanal, )
 }
 
 if (/^I'm Fz|im fz$/i.test(m.text)) {
-conn.reply(m.chat, `*I'm fz~🔥 es la pajeadora de mi creador* 🥵🥵`, m, rcanal, )
+conn.reply(m.chat, `*Psycho🔥 es la pajeadora de mi creador* 🥵🥵`, m, rcanal, )
 }
 
 if (/^porno|xxx|gore/i.test(m.text)) {
@@ -108,7 +108,7 @@ conn.reply(m.chat, `**R꙰EGLAS DEL GRUP❍ꪜ*
 █║║██║║██║║██║║██║║█
 ✧･ﾟ: *✧･Atte.
 
-☆ ፝͜★ৡ͜͡✞ *CrowBot* ➵͡☠️⃪̸ੵ᷒ᰰ↱
+☆ ፝͜★ৡ͜͡✞ *𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛* ➵͡☠️⃪̸ੵ᷒ᰰ↱
 
 ✧･ﾟ: *✧･ﾟ:*✧･ﾟ: *✧･ﾟ:*✧･ﾟ: *✧･ﾟ:*`, m, rcanal, )
 }
