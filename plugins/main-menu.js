@@ -41,7 +41,7 @@ const defaultMenu = {
 ╚━━━━━━━━━━━━━━
 %readmore
 ╔━━━━━ *⊱INFO - USER⊰*
-✧  🤖 *Bot:* ${nombrebot} 
+✧  🤖 *Bot:* PrakBot-MD
 ✦  🚀 *Modo:* Privado VIP 
 ✧  ✨ *Baileys:* Multi Device
 ✦  🧿 *Tiempo Activo:* %muptime
