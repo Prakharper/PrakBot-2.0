@@ -22,10 +22,10 @@ let tags = {
 const defaultMenu = {
   before: `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
 
-Hola *%name* soy *CrowBot*
+Hola *%name* soy *PrakBot*
 
 ┏━━━━━━━━ CREADOR
-┃  ✿︎ ᥕіᥣᥣzᥱk-᥆𝖿ᥴ
+┃  ☠︎︎ 𝐏𝐫𝐚𝐤 𝐡𝐚𝐫𝐩𝐞𝐫
 ┗━━━━━━━━━━━━━━
 %readmore
 ┏━━━━━━━━ INFO - BOT
@@ -35,7 +35,7 @@ Hola *%name* soy *CrowBot*
 ┗━━━━━━━━━━━━━━
 %readmore
 ┏━━━━━━━━━ INFO - USER
-┃  ✿︎ Bot: Crow Bot - ST 
+┃  ✿︎ Bot: Prak Bot - ST 
 ┃  ✿︎ Modo Público
 ┃  ✿︎ Baileys: Multi Device
 ┃  ✿︎ Tiempo Activo: %muptime
@@ -46,8 +46,8 @@ Hola *%name* soy *CrowBot*
 
 \t*L I S T A  -  D E  -  C O M A N D O S* 
 `.trimStart(),
-    header: ' ☁「 MENU ✯ %category 」☁\n ',
-  body: '> 🍬>%cmd',
+    header: ' 🚀「 MENU ✯ %category 」🚀\n ',
+  body: '> 🧿>%cmd',
   footer: '*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*\n',
   after: `> ${dev}`,
 }
