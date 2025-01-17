@@ -37,12 +37,12 @@ global.ofcbot = `${conn.user.jid.split('@')[0]}`
 global.asistencia = 'Wa.me/50557865603'
 global.namech = '˙˒𖥻˚𝐂𝐫𝐨𝐰𝐁𝐨𝐭 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥﹋꥟'
 global.namechannel2 = '『✯ 𝗧𝗲𝗮𝗺 𝗖𝗼𝗺𝘂𝗻𝗶𝘁𝘆 𝗖𝗿𝗼𝘄 ✯』'
-global.namegrupo = 'シ︎ 𝗖𝗿𝗼𝘄𝗕𝗼𝘁-𝗠𝗗 💛'
+global.namegrupo = 'シ︎ 𝗣𝗥𝗔𝗞𝗕𝗢𝗧-2.0 🚀'
 global.namecomu = '『𝗚𝗿𝘂𝗽𝗼 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 𝗖𝗿𝗼𝘄𝗕𝗼𝘁✯』'
-global.namecomu2 = '𝗧𝗵𝗲𝗖𝗿𝗼𝘄𝗕𝗼𝘁'
-global.colab1 = '𝗧𝗵𝗲𝗖𝗿𝗼𝘄𝗕𝗼𝘁'
-global.colab2 = '𝗧𝗵𝗲𝗖𝗿𝗼𝘄𝗕𝗼𝘁'
-global.colab3 = '𝗧𝗵𝗲𝗖𝗿𝗼𝘄𝗕𝗼𝘁'
+global.namecomu2 = '𝗧𝗵𝗲𝗣𝗿𝗮𝗸𝗕𝗼𝘁'
+global.colab1 = '𝗧𝗵𝗲𝗣𝗿𝗮𝗸𝗕𝗼𝘁'
+global.colab2 = '𝗧𝗵𝗲𝗣𝗿𝗮𝗸𝗕𝗼𝘁'
+global.colab3 = '𝗧𝗵𝗲𝗣𝗿𝗮𝗸𝗕𝗼𝘁'
 
 //Reacciones De Comandos.!
 global.rwait = '🕒'
@@ -50,11 +50,11 @@ global.done = '✅'
 global.error = '✖️'
 
 //Emojis determinado de CrowBot
-global.emoji = '🚩'
-global.emoji2 = '💛'
+global.emoji = '🚀'
+global.emoji2 = '🧿'
 global.emoji3 = '🌠'
-global.emoji4 = '🍭'
-global.emoji5 = '🔱'
+global.emoji4 = '🧿'
+global.emoji5 = '🚀'
 global.emojis = [emoji, emoji2, emoji3, emoji4, emoji5].getRandom()
 
 //mensaje en espera
@@ -121,7 +121,7 @@ global.urls = [
 let gifUrl = urls[Math.floor(Math.random() * urls.length)];
 
 const canalName = [
-"⏤͟͟͞͞⋆⬪࣪ꥈ🎅★ ׄ ꒱ 𝑪𝒓𝒐𝒘𝑩𝒐𝒕 - 𝑺.𝑪.𝑨 ୭",
+"⏤͟͟͞͞⋆⬪࣪ꥈ🎅★ ׄ ꒱ 𝑷𝒓𝒂𝒌𝑩𝒐𝒕 - 𝑺.𝑪.𝑨 ୭",
 "𝐌𝐚𝐬𝐡𝐚 𝐇𝐨𝐬𝐭 🎄 ℍ𝕠𝕤𝕥𝕚𝕟𝕘"
 ].getRandom()
 const randomCanalName =
