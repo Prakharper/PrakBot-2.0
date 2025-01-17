@@ -4,25 +4,25 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'crow': '👑「 *`MENUS CROWBOT`* 」👑',
-  'main': '「INFO」🍨',
-  'teclado': '「TECLADO CROWBOT」🍨',
-  'buscador': '「BUSQUEDAS」🍨',
-  'fun': '「JUEGOS」🍨',
-  'serbot': '「SUB BOTS」🍨',
-  'rpg': '「RPG」🍨',
-  'gacha': '「ROLLWAIFUS」🍨',
-  'rg': '「REGISTRO」🍨',
-  'sticker': '「STICKERS」🍨',
-  'emox': '「ANIMES」🍨',
-  'database': '「DATABASE」🍨',
-  'grupo': '「GRUPOS」🍨',
+  'Prak': '🚀「 *`MENUS 𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛`* 」🚀',
+  'main': '「INFO」🚀',
+  'teclado': '「TECLADO CROWBOT」🧿',
+  'buscador': '「BUSQUEDAS」🌠',
+  'fun': '「JUEGOS」🚀',
+  'serbot': '「SUB BOTS」🧿',
+  'rpg': '「RPG」🌠',
+  'gacha': '「ROLLWAIFUS」🚀',
+  'rg': '「REGISTRO」🌠',
+  'sticker': '「STICKERS」🧿',
+  'emox': '「ANIMES」🚀',
+  'database': '「DATABASE」🧿',
+  'grupo': '「GRUPOS」🌠',
   'nable': '「ON / OFF」', 
-  'descargas': '「DESCARGAS」🍨',
-  'tools': '「HERRAMIENTAS」🍨',
-  'info': '「INFORMACIÓN」🍨',
-  'owner': '「CREADOR」🍨',
-  'logos': '「EDICION LOGOS」🍨', 
+  'descargas': '「DESCARGAS」🚀',
+  'tools': '「HERRAMIENTAS」🌠',
+  'info': '「INFORMACIÓN」🧿',
+  'owner': '「CREADOR」🚀',
+  'logos': '「EDICION LOGOS」🌠', 
 }
 
 const vid = ['https://files.catbox.moe/z23r5g.mp4', 'https://files.catbox.moe/z23r5g.mp4', 'https://files.catbox.moe/z23r5g.mp4']
@@ -30,7 +30,7 @@ const vid = ['https://files.catbox.moe/z23r5g.mp4', 'https://files.catbox.moe/z2
 const defaultMenu = {
   before: `*•:•:•:•:•:•:•:•:•:•☾☼☽•:•.•:•.•:•:•:•:•:•*
 
-“ *「💛」 ¡Hola! %name soy ${nombrebot}*, *%greeting* ❒”
+“ *「🚀」 ¡Hola! %name soy ${nombrebot}*, *%greeting* ❒”
 
 ╔━━━━━ *⊱INFO - BOT⊰*
 ✦  👤 *Cliente:* %name
@@ -53,7 +53,7 @@ const defaultMenu = {
 \t*(✰◠‿◠) 𝐂 𝐨 𝐦 𝐚 𝐧 𝐝 𝐨 𝐬*   
 `.trimStart(),
       header: '✧*̥˚ ︶︶︶︶︶︶︶︶︶  ✧*̥˚\n┊ %category \n✧*̥˚ ︶︶︶︶︶︶︶︶︶  ✧*̥˚',
-  body: '*┃⏤͟͟͞͞🍭➤›* %cmd',
+  body: '*┃☠︎︎🚀➤›* %cmd',
   footer: '*┗━*\n',
   after: `> ${dev}`,
 }
@@ -145,7 +145,7 @@ npmdesc: _package.description,
 version: _package.version,
 exp: exp - min,
 maxexp: xp,
-botofc: (conn.user.jid == global.conn.user.jid ? '💛 𝙴𝚂𝚃𝙴 𝙴𝚂 𝙴𝙻 𝙱𝙾𝚃 𝙾𝙵𝙲' : `💛 𝚂𝚄𝙱-𝙱𝙾𝚃 𝙳𝙴: Wa.me/${global.conn.user.jid.split`@`[0]}`), 
+botofc: (conn.user.jid == global.conn.user.jid ? '🚀 𝙴𝚂𝚃𝙴 𝙴𝚂 𝙴𝙻 𝙱𝙾𝚃 𝙾𝙵𝙲' : `🚀 𝚂𝚄𝙱-𝙱𝙾𝚃 𝙳𝙴: Wa.me/${global.conn.user.jid.split`@`[0]}`), 
 totalexp: exp,
 xp4levelup: max - exp,
 github: _package.homepage ? _package.homepage.url || _package.homepage : '[unknown github url]',
