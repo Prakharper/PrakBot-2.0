@@ -30,7 +30,7 @@ const vid = ['https://files.catbox.moe/m79w6n.mp4', 'https://files.catbox.moe/m7
 const defaultMenu = {
   before: `*•:•:•:•:•:•:•:•:•:•☾☼☽•:•.•:•.•:•:•:•:•:•*
 
-“ *「🚀」 ¡Hola! %name soy ${nombrebot}*, *%greeting* ❒”
+“ *「🚀」 ¡Hola! %name soy ${botname}*, *%greeting* ❒”
 
 ╔━━━━━ *⊱INFO - BOT⊰*
 ✦  👤 *Cliente:* %name
