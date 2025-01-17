@@ -3,8 +3,8 @@ let staff = `🚀 *EQUIPO DE AYUDANTES*
 🧿 *Bot:* ${global.botname}
 🌠 *Versión:* ${global.vs}
 
-• *AAMŌN EDITOR PROFESIONAL Y PUTITA FAVORITA DE PRAK HARPER* 
-🩸 *Rol:* Experiencia En Javascript y html
+• *AAMŌN* 
+🩸 *Rol:* EDITOR PROFESIONAL Y PUTITA FAVORITA DE PRAK HARPER
 🩸 *Número:* Wa.me/529983694618
 
 • *MATTEUS*  
