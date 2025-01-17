@@ -11,6 +11,13 @@ let staff = `🚀 *EQUIPO DE AYUDANTES*
 🧿 *Rol:* COLABORADOR DEL VIDEO DEL MENÚ Y SOBRINO FAVORITO DE PRAK
 🧿 *Número:* Wa.me/573185444099
 `
+
+
+• *Psycho*  
+♟️ *Rol:* COLABORADOR DEL BANNER Y EDICIONES EXTRAS 
+♟️ *Número:* Wa.me/573185444099
+`
+
 await conn.sendFile(m.chat, 'https://files.catbox.moe/sx42eg.jpg', 'brook.jpg', staff.trim(), fkontak, true, {
 contextInfo: {
 'forwardingScore': 200,
