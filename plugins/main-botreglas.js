@@ -18,15 +18,15 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         "participant": "0@s.whatsapp.net"
     };
 
-    let crow = `🍁 *Respeta las reglas de CrowBot*\n
-✰ No llamar Al Bot
-✰ No hacer spam
-✰ Contacta al creador si es necesario
-✰ Pedir permiso para añadir al bot a un grupo
+    let crow = `🧿 *Respeta las reglas de PrakBot*\n
+☠︎︎ No llamar Al Bot
+☠︎︎ No hacer spam
+☠︎︎ Contacta al creador si es necesario
+☠︎︎ Pedir permiso para añadir al bot a un grupo
 
-💛 𝗡𝗼𝘁𝗮: *Si no cumples con las reglas del bot, seras bloqueado.*
+🚀 𝗡𝗼𝘁𝗮: *Si no cumples con las reglas del bot, seras bloqueado.*
 
-💛 𝗔𝘃𝗶𝘀𝗼: *Puedes apoyarnos dejando una estrellita 🌟 al repositorio oficial de CrowBot: ${repobot}*
+🚀 𝗔𝘃𝗶𝘀𝗼: *Puedes apoyarnos dejando una estrellita 🌟 al repositorio oficial de CrowBot: ${repobot}*
 
 ${global.md || ''}`.trim(); // Asegúrate de que global.md esté definido
 
