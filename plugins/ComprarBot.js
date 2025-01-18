@@ -3,7 +3,7 @@ let handler = async (m, { conn }) => {
 // No Quites Los Créditos🦌
 m.react('💙');
 // Mensaje que se enviará
-const message = "〔⛄ *PRAK - BOT* ❄️〕\n\n> *🦌FELIZ NAVIDAD🎄*\n\n*BOT PARA GRUPO* :\n> wa.me/50557865603\n\n*BOT PERZONALIZADO* :\n> wa.me/50557865603";
+const message = "〔⛄ *PRAK - BOT* ❄️〕\n\n> *🦌FELIZ NAVIDAD🎄*\n\n*BOT PARA GRUPO* :\n> wa.me/584241836217\n\n*BOT PERZONALIZADO* :\n> wa.me/584241836217";
 if (m, rcanal) {
 // Feliz Navidad🎄
 const imageUrl = 'https://files.catbox.moe/o6uocz.jpg';
