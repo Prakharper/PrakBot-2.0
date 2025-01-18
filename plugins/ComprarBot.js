@@ -1,12 +1,12 @@
 // Créditos A Niño Piña
 let handler = async (m, { conn }) => {
 // No Quites Los Créditos🦌
-m.react('🎄');
+m.react('💙');
 // Mensaje que se enviará
 const message = "〔⛄ *PRAK - BOT* ❄️〕\n\n> *🦌FELIZ NAVIDAD🎄*\n\n*BOT PARA GRUPO* :\n> wa.me/50557865603\n\n*BOT PERZONALIZADO* :\n> wa.me/50557865603";
 if (m, rcanal) {
 // Feliz Navidad🎄
-const imageUrl = 'https://i.ibb.co/qJNL5Bg/file.jpg';
+const imageUrl = 'https://files.catbox.moe/o6uocz.jpg';
 try {
 // Que No Quites Los Créditos😑
 // Te Estoy Viendo😑
