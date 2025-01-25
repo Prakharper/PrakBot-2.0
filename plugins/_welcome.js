@@ -47,7 +47,6 @@ export async function before(m, { conn, participants, groupMetadata }) {
     );
 
     await conn.sendMessage(m.chat, { image: { url: img }, caption: bienvenida, quoted: estilo });
-
   }
 
   if (chat.welcome && m.messageStubType == 28) {
@@ -58,7 +57,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
       `¡Hasta pronto Usuario!`
     );
 
-    await conn.sendMessage(m.chat, { image: { url: img }, caption: bye, { quoted: estilo });
+    await conn.sendMessage(m.chat, { image: { url: img }, caption: bye, quoted: estilo });
   }
 
   if (chat.welcome && m.messageStubType == 32) {
@@ -69,6 +68,6 @@ export async function before(m, { conn, participants, groupMetadata }) {
       `¡Hasta pronto Usuario!`
     );
 
-    await conn.sendMessage(m.chat, { image: { url: img }, caption: bye, { quoted: estilo });
+    await conn.sendMessage(m.chat, { image: { url: img }, caption: bye, quoted: estilo });
   }
 }
