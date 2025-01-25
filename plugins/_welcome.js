@@ -1,31 +1,73 @@
-import { WAMessageStubType } from '@whiskeysockets/baileys'
-import fetch from 'node-fetch'
+import { WAMessageStubType } from '@whiskeysockets/baileys';
+import fetch from 'node-fetch';
+import canvafy from 'canvafy';
 
 export async function before(m, { conn, participants, groupMetadata }) {
-  if (!m.messageStubType || !m.isGroup) return true
+  if (!m.messageStubType || !m.isGroup) return !0;
 
-  let who = m.messageStubParameters[0]
-  let taguser = `@${who.split('@')[0]}`
-  let chat = global.db.data.chats[m.chat]
-  let defaultImage = 'https://i.ibb.co/SKWVKSj/file.jpg';
+  let chat = global.db.data.chats[m.chat];
+  let web = 'https://genesis-support.vercel.app/';
+  let webb = 'https://izumikzx.vercel.app/';
+  let who = m.messageStubParameters[0] + '@s.whatsapp.net';
+  let user = global.db.data.users[who];
+  let userName = user ? user.name : await conn.getName(who);
 
-  if (chat.welcome) {
-    let img;
+  const getUserAvatar = async () => {
     try {
-      let pp = await conn.profilePictureUrl(who, 'image');
-      img = await (await fetch(pp)).buffer();
-    } catch {
-      img = await (await fetch(defaultImage)).buffer();
+      return await conn.profilePictureUrl(m.messageStubParameters[0], 'image');
+    } catch (err) {
+      return 'https://files.catbox.moe/ciy0l1.jpg';
     }
+  };
 
-    if (m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
-    let bienvenida = `┌─☠︎︎ 𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛-2.0\n│「 Bienvenido 」\n└┬☠︎︎ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │🚀  Bienvenido a\n   │🚀  ${groupMetadata.subject}\n   └───────────────┈ ⳹\n> ${dev}`
-      await conn.sendMessage(m.chat, { image: img, caption: bienvenida, mentions: [who] }, { quoted: estilo })
-    } else if (m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_REMOVE || m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE) {
-     let bye = `┌─☠︎︎ 𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛𝐭-2.0\n│「 ADIOS 👋 」\n└┬☠︎︎ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │🚀  Se fue\n   │🚀 un plato menos en la mesa\n   └───────────────┈ ⳹\n> ${dev}`
-      await conn.sendMessage(m.chat, { image: img, caption: bye, mentions: [who] }, { quoted: estilo })
-    }
+  const generateImage = async (title, description) => {
+    const userAvatar = await getUserAvatar();
+    const img = await new canvafy.WelcomeLeave()
+      .setAvatar(userAvatar)
+      .setBackground(
+        'image',
+        'https://files.catbox.moe/ciy0l1.jpg'
+      )
+      .setTitle(title)
+      .setDescription(description)
+      .setBorder('#2a2e35')
+      .setAvatarBorder('#2a2e35')
+      .setOverlayOpacity(0.3)
+      .build();
+
+    return img;
+  };
+
+  if (chat.welcome && m.messageStubType == 27) {
+    let bienvenida = `🩸 *Se unió* al grupo *${groupMetadata.subject.trim()}*\n    ✰ @${m.messageStubParameters[0].split`@`[0]} \n\n    愛 ────㌃ Bienvenido al infierno. Esperamos que tengas una estadía amena dentro de las profundidades del inframundo, no seas sensible o vas fuera.\n\n> > ✐ No olvides usar *#help* si necesitas algo.\n> 🜸 ¡Disfruta de tu tiempo con nosotros!`;
+
+    let img = await generateImage(
+      '¡BIENVENIDO!',
+      `¡Hola Bienvenido al grupo!`
+    );
+
+    await conn.sendMessage(m.chat, bienvenida, img, img, web, null);
   }
 
-  return true
+  if (chat.welcome && m.messageStubType == 28) {
+    let bye = `❀ *Se salió* del grupo  *${groupMetadata.subject.trim()}*\n    ✰ @${m.messageStubParameters[0].split`@`[0]}\n\n    Ꮚ⁠˘⁠ ⁠ꈊ⁠ ⁠˘⁠ ⁠Ꮚ ¡Nos vemos pronto! ¡Que tengas un buen día!\n\n> ✐ No olvides usar *#help* si necesitas algo.\n> 🜸 Adiós...`;
+
+    let img = await generateImage(
+      '¡ADIOS!',
+      `¡Hasta pronto Usuario!`
+    );
+
+    await conn.sendMessage(m.chat, botname, dev, bye, img, img, webb, null);
+  }
+
+  if (chat.welcome && m.messageStubType == 32) {
+    let kick = `❀ *Se salió* del grupo  *${groupMetadata.subject.trim()}*\n    ✰ @${m.messageStubParameters[0].split`@`[0]}\n\n    Ꮚ⁠˘⁠ ⁠ꈊ⁠ ⁠˘⁠ ⁠Ꮚ ¡Nos vemos pronto! ¡Que tengas un buen día!\n\n> ✐ No olvides usar *#help* si necesitas algo.\n> 🜸 Adiós...`;
+
+    let img = await generateImage(
+      '¡ADIOS!',
+      `¡Hasta pronto Usuario!`
+    );
+
+    await conn.sendMessage(m.chat, botname, dev, kick, img, img, web, null);
+  }
 }
