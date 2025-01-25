@@ -46,7 +46,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
       `¡Hola Bienvenido al grupo!`
     );
 
-    await conn.sendMessage(m.chat, bienvenida, img, img, web, null);
+    await conn.sendMessage(m.chat, { image: { url: img }, caption: bienvenida, null);
   }
 
   if (chat.welcome && m.messageStubType == 28) {
