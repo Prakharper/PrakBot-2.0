@@ -46,8 +46,8 @@ export async function before(m, { conn, participants, groupMetadata }) {
       `¡Hola Bienvenido al grupo!`
     );
 
-    await conn.sendMessage(m.chat, { image: { url: img , caption: bienvenida }, { quoted: estilo });
-  }
+     await conn.sendMessage(m.chat, { image: img, caption: bye }, { quoted: estilo })
+}
 
   if (chat.welcome && m.messageStubType == 28) {
     let bye = `❀ *Se salió* del grupo  *${groupMetadata.subject.trim()}*\n    ✰ @${m.messageStubParameters[0].split`@`[0]}\n\n    Ꮚ⁠˘⁠ ⁠ꈊ⁠ ⁠˘⁠ ⁠Ꮚ ¡Nos vemos pronto! ¡Que tengas un buen día!\n\n> ✐ No olvides usar *#help* si necesitas algo.\n> 🜸 Adiós...`;
@@ -57,7 +57,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
       `¡Hasta pronto Usuario!`
     );
 
-    await conn.sendMessage(m.chat, { image: { url: img , caption: bye }, { quoted: estilo });
+    await conn.sendMessage(m.chat, { image: img, caption: bye }, { quoted: estilo })
   }
 
   if (chat.welcome && m.messageStubType == 32) {
