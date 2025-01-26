@@ -68,6 +68,6 @@ export async function before(m, { conn, participants, groupMetadata }) {
       `¡Hasta pronto Usuario!`
     );
 
-    await conn.sendMessage(m.chat, { image: { url: img , caption: bye }, { quoted: estilo });
+      await conn.sendMessage(m.chat, { image: img, caption: bye }, { quoted: estilo })
   }
 }
