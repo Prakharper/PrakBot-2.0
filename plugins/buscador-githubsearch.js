@@ -14,6 +14,7 @@ if (!text) return m.reply(m.chat, '🍭 Ingresa Un Nombre De Repositorio o De Us
 try {
 let api = 'https://dark-core-api.vercel.app/api/search/github?key=api&q=${text}';
 
+let responde = await fetch(api);
 let json = await api.json();
 
 let txt = `Nombre: ${json.name}\nDescripcion: ${json.description}\nCreado: ${json.createdAt}`;
