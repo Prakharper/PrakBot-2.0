@@ -9,7 +9,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     try {
         let api = await fetch(`https://delirius-apiofc.vercel.app/ia/llamaia?query=${text}`)
         let json = await api.json()
-        let txt = { contextInfo: { externalAdReply: { title: 'Llama AI - WhatsApp', body: null, mediaType: 1, previewType: 0, mediaUrl: channel, sourceUrl: redes, thumbnailUrl: 'https://i.pinimg.com/originals/9d/e4/97/9de497cbac67554d199b5945006f14d0.jpg', renderLargerThumbnail: false }}}
+        let txt = { contextInfo: { externalAdReply: { title: 'Llama AI - WhatsApp', body: null, mediaType: 1, previewType: 0, mediaUrl: channel, sourceUrl: redes, thumbnailUrl: 'https://files.catbox.moe/c77b2w.jpg', renderLargerThumbnail: false }}}
 
         await conn.reply(m.chat, json.data, m, txt)
 
