@@ -15,7 +15,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 text: responseMessage,
 contextInfo: {
 externalAdReply: {
-title: 'ᥣᥣᥲmᥲ - ᥲі ⍴᥆ᥕᥱr ᑲᥡ mᥱ𝗍ᥲ',
+title: '𝐋𝐥𝐚𝐦𝐚 𝐀𝐢 - 𝐈𝐧𝐭𝐞𝐥𝐢𝐠𝐞𝐧𝐜𝐢𝐚 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥',
 body: dev,
 thumbnailUrl: 'https://cloud.dorratz.com/files/3bc739df5766a9de8e7dfef65d6961f6',
 sourceUrl: channel,
