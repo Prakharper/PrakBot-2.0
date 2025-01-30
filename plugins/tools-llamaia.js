@@ -17,7 +17,7 @@ contextInfo: {
 externalAdReply: {
 title: 'ᥣᥣᥲmᥲ - ᥲі ⍴᥆ᥕᥱr ᑲᥡ mᥱ𝗍ᥲ',
 body: dev,
-thumbnailUrl: 'https://files.catbox.moe/8nf88e.jpg.jpeg',
+thumbnailUrl: 'https://cloud.dorratz.com/files/3bc739df5766a9de8e7dfef65d6961f6',
 sourceUrl: channel,
 mediaType: 1,
 renderLargerThumbnail: true
