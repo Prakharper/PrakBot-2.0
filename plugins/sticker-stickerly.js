@@ -12,10 +12,14 @@ let handler = async (m, { conn, text }) => {
         const response = await fetch(apiUrl);
         const json = await response.json();
 
-        for (let sticker of json.stickers) {
-            if (sticker.url) {
-                await conn.sendFile(m.chat, sticker.url, 'sticker.webp', m);
+        if (Array.isArray(json.stickers)) {
+            for (let sticker of json.stickers) {
+                if (sticker.url) {
+                    await conn.sendFile(m.chat, sticker.url, 'sticker.webp', m);
+                }
             }
+        } else {
+            m.reply(`🍭 No se encontraron stickers en la URL proporcionada.`);
         }
 
     } catch (error) {
