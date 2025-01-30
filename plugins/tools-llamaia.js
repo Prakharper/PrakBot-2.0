@@ -1,6 +1,9 @@
-/* Codigo Hecho Por WillZek 
-- https://github.com/WillZek
+/* Llama Al By WillZek 
+- Powered By Free Codes Titan
+- https://whatsapp.com/channel/0029ValMlRS6buMFL9d0iQ0S
 */
+
+// [🧠] 𝗟𝗟𝗔𝗠𝗔 𝗔𝗜
 
 import fetch from 'node-fetch'
 
