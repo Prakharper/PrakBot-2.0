@@ -9,10 +9,20 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     try {
         let api = await fetch(`https://delirius-apiofc.vercel.app/ia/llamaia?query=${text}`)
         let json = await api.json()
-        let txt = { contextInfo: { externalAdReply: { title: 'Llama AI - WhatsApp', body: null, mediaType: 1, previewType: 0, mediaUrl: channel, sourceUrl: redes, thumbnailUrl: 'https://files.catbox.moe/i5ljhw.jpg', renderLargerThumbnail: false }}}
+        let responseMessage = json.data;
 
-        await conn.reply(m.chat, json.data, m, txt)
-
+        await conn.sendMessage(m.chat, {
+text: responseMessage,
+contextInfo: {
+externalAdReply: {
+title: 'ᥣᥣᥲmᥲ - ᥲі ⍴᥆ᥕᥱr ᑲᥡ mᥱ𝗍ᥲ',
+body: dev,
+thumbnailUrl: 'https://files.catbox.moe/j791b7.jpeg',
+sourceUrl: channel,
+mediaType: 1,
+renderLargerThumbnail: true
+}}},
+{ quoted: m})
     } catch (error) { 
         console.error(error)
     }
