@@ -12,6 +12,7 @@ let handler = async (m, { conn, text }) => {
         const response = await fetch(apiUrl);
         const json = await response.json();
 
+m.reply(`${json.error}`);
         if (Array.isArray(json.stickers)) {
             for (let sticker of json.stickers) {
                 if (sticker.url) {
