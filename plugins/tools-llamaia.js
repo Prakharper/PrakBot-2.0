@@ -1,52 +1,23 @@
-import Groq from 'groq-sdk'
+/* Codigo Hecho Por WillZek 
+- https://github.com/WillZek
+*/
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-  let groq = new Groq({ apiKey: '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' })
-  conn.aiSessions = conn.aiSessions ? conn.aiSessions : {}
+import fetch from 'node-fetch'
 
-  if (!text) return conn.reply(m.chat, `❀ Ingresa un texto para hablar con la IA`, m)
+let handler = async (m, { conn, command, text, usedPrefix }) => {
+    if (!text) return conn.reply(m.chat, '🍭 Ingrese un texto para hablar con Llama AI', m)
+    try {
+        let api = await fetch(`https://delirius-apiofc.vercel.app/ia/llamaia?query=${text}`)
+        let json = await api.json()
+        let Text = { contextInfo: { externalAdReply: { title: 'Llama AI - WhatsApp', body: null, mediaType: 1, previewType: 0, mediaUrl: channel, sourceUrl: 'https://llamaai.com', thumbnailUrl: 'https://i.pinimg.com/originals/9d/e4/97/9de497cbac67554d199b5945006f14d0.jpg', renderLargerThumbnail: false }}}
 
-  try {
-    if (!(m.sender in conn.aiSessions))
-      conn.aiSessions[m.sender] = [{
-        role: 'system',
-        content: `Eres Llama Ai una inteligencia artificial, responde de manera clara y concisa con emojis en todo texto para que los usuarios entiendan mejor tus respuestas. El nombre del usuario será: ${conn.getName(m.sender)}`
-      }]
+        await conn.reply(m.chat, json.result, m, Text)
 
-    if (conn.aiSessions[m.sender].length > 10) {
-      conn.aiSessions[m.sender] = conn.aiSessions[m.sender].slice(-1)
+    } catch (error) { 
+        console.error(error)
     }
-
-    conn.aiSessions[m.sender].push({ role: 'user', content: text })
-
-    let sessionMessages = [...conn.aiSessions[m.sender], { role: 'user', content: text }]
-
-    let payloads = { messages: sessionMessages, model: 'llama-3.1-70b-versatile' }
-
-    let json = await groq.chat.completions.create(payloads)
-    let responseMessage = json.choices[0].message.content
-    conn.aiSessions[m.sender].push({ role: "system", content: responseMessage })
-
-await conn.sendMessage(m.chat, {
-text: responseMessage,
-contextInfo: {
-externalAdReply: {
-title: 'ᥣᥣᥲmᥲ - ᥲі ⍴᥆ᥕᥱr ᑲᥡ mᥱ𝗍ᥲ',
-body: dev,
-thumbnailUrl: 'https://files.catbox.moe/j791b7.jpeg',
-sourceUrl: 'https://whatsapp.com/channel/0029Vb1AFK6HbFV9kaB3b13W',
-mediaType: 1,
-renderLargerThumbnail: true
-}}},
-{ quoted: m})
-
-  } catch (error) {
-    console.error(error)
-  }
 }
 
-handler.help = ['llama *<texto>*'];
-handler.tags = ['tools'];
-handler.command = ['llama']
+handler.command = ['llamaai', 'llama']
 
 export default handler
