@@ -24,7 +24,7 @@ let handler = async (m, { conn, text }) => {
 
         for (let sticker of json.stickers) {
 
-            conn.sendFile(m.chat, sticker.url, 'sticker.webp', 'Aquí tienes tu sticker!', m);
+            conn.sendFile(m.chat, sticker.url, 'sticker.webp', m);
         }
        
     } catch (error) {
