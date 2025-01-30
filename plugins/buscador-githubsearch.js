@@ -19,7 +19,9 @@ let json = await response.json();
 
 let txt = `Nombre: ${json.name}\nDescripcion: ${json.description}\nCreado: ${json.createdAt}`;
 
-conn.sendMessage(m.chat, { image: { url: 'despuespongoesto.jpg', caption: txt }, { quoted: fkontak }});
+let img = 'https://cloud.dorratz.com/files/669d45d70d27913f08db78953c11903b';
+
+conn.sendMessage(m.chat, { image: { url: img, caption: txt }, { quoted: fkontak }});
 
 } catch (error) {
 console.log(error)
