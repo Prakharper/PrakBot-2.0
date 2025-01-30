@@ -17,7 +17,7 @@ contextInfo: {
 externalAdReply: {
 title: 'ᥣᥣᥲmᥲ - ᥲі ⍴᥆ᥕᥱr ᑲᥡ mᥱ𝗍ᥲ',
 body: dev,
-thumbnailUrl: 'https://files.catbox.moe/j791b7.jpeg',
+thumbnailUrl: 'https://files.catbox.moe/rbeglq.jpg',
 sourceUrl: channel,
 mediaType: 1,
 renderLargerThumbnail: true
