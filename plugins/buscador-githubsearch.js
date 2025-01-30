@@ -11,6 +11,7 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
 
 if (!text) return m.reply(m.chat, '🍭 Ingresa Un Nombre De Repositorio o De Usuario De Github', m, rcanal);
 
+try {
 let api = 'https://dark-core-api.vercel.app/api/search/github?key=api&text=${text}';
 
 let json = await api.json();
@@ -18,6 +19,12 @@ let json = await api.json();
 let txt = `Nombre: ${json.name}\nDescripcion: ${json.description}\nCreado: ${json.createdAt}`;
 
 conn.sendMessage(m.chat, { image: { url: 'despuespongoesto.jpg', caption: txt }, { quoted: fkontak }});
+
+} catch (error) {
+console.log(error)
+m.reply(`*Error:* ${error.message}`);
+m.reply('✖️');
+ }
 };
 
 handler.command = ['githubsearch', 'gbsearch'];
