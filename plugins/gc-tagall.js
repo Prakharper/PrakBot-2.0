@@ -7,7 +7,7 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
   }
   const pesan = args.join` `;
   const colombia = `💌 *Mensaje:* ${pesan}`;
-  let teks = `🚀 *Revivan hijos de puta*\n${colombia}\n\n┏ ☠︎︎𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛-2.0\n`;
+  let teks = `🚀 *PRAK BOT LES DESEA FELIZ MES DEL AMOR*\n${colombia}\n\n┏ ☠︎︎𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛-2.0\n`;
   
   for (const mem of participants) {
     teks += `┋🚀@${mem.id.split('@')[0]}\n`;
