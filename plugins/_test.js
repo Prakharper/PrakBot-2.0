@@ -24,7 +24,7 @@ global.botname = newname;
 handler.help = ['setname *<mensaje>*'];
 handler.tags = ['serbot'];
 handler.command = ['setname', 'setbotname', 'test'];
-handler.admin = true;
-handler.group = true;
+handler.admin = false;
+handler.group = false;
 
 export default handler;
