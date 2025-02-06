@@ -4,15 +4,15 @@ let handler = async (m, { conn, args }) => {
 if (!args[0]) return m.reply('🍭 Ingresa un link de Terabox');
 
 try {
-let api = `https://dark-core-api.vercel.app/api/download/TeraBox?key=api&url=${args[0]}`
+let api = `https://apis-starlights-team.koyeb.app/starlight/terabox-dl?url=${args[0]}`
 let res = await fetch(api);
 let json = await res.json();
 
 // if (!json.success) return m.reply('❌ Error al obtener los detalles del enlace, por favor intenta nuevamente.');
 
-let link = json[0].url;
-let filename = json[0].fileName;
-let mime = json[0].type;
+let link = json[0].md5;
+let filename = json[0].;
+let mime = json[0].;
 
 let txt = `*「🍨」${filename}*`;
 
