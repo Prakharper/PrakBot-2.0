@@ -21,7 +21,7 @@ await conn.sendMessage(m.chat, { document: { url: link }, mimetype: mime, fileNa
         await m.react('✅');
     } catch (error) {
         console.error(error);
-        m.reply('❌ Ocurrió un error al procesar la solicitud.');
+        m.reply(`❌ Ocurrió un error al procesar la solicitud. ${error.message}`);
     }
 }
 
