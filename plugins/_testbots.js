@@ -1,5 +1,4 @@
 import fetch from 'node-fetch';
-import axios from 'axios';
 
 let handler = async (m, { conn, args }) => {
     if (!args[0]) return m.reply('🍭 Ingresa un link de Terabox');
