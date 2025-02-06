@@ -5,8 +5,9 @@ let handler = async (m, { conn, args }) => {
     if (!args[0]) return m.reply('🍭 Ingresa un link de Terabox');
 
 try {
-let api = await fetch(`https://dark-core-api.vercel.app/api/download/TeraBox?key=api&url=${args[0]}`);
-let json = await api.json();
+let api = `https://dark-core-api.vercel.app/api/download/TeraBox?key=api&url=${args[0]}`
+let res = await fetch(api);
+let json = await res.json();
 
 if (!json.success) return m.reply('❌ Error al obtener los detalles del enlace, por favor intenta nuevamente.');
 
