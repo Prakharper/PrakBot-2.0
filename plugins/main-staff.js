@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
-let namebot = global.db.data.global.db.data.users[m.sender].namebot || 'desconocido';
+let namebot = global.db.data.users[m.sender].namebot || 'desconocido';
 
 let staff = `🚀 *EQUIPO DE AYUDANTES*
 🧿 *Bot:* ${namebot}
