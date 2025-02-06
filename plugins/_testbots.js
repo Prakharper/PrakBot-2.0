@@ -12,7 +12,7 @@ let json = await res.json();
 
 let link = json[0].name;
 let filename = json[0].md5;
-let mime = json[0].;
+let mime = json[0].size;
 
 let txt = `*「🍨」${filename}*`;
 
