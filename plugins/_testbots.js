@@ -11,9 +11,9 @@ let json = await res.json();
 
 // if (!json.success) return m.reply('❌ Error al obtener los detalles del enlace, por favor intenta nuevamente.');
 
-let link = json.url[0];
-let filename = json.fileName[0];
-let mime = json.type[0];
+let link = json.url;
+let filename = json.fileName;
+let mime = json.type;
 
 let txt = `*「🍨」${filename}*`;
 
