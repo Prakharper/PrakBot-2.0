@@ -10,8 +10,8 @@ let json = await res.json();
 
 // if (!json.success) return m.reply('❌ Error al obtener los detalles del enlace, por favor intenta nuevamente.');
 
-let link = json[0].md5;
-let filename = json[0].;
+let link = json[0].name;
+let filename = json[0].md5;
 let mime = json[0].;
 
 let txt = `*「🍨」${filename}*`;
