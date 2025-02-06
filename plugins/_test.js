@@ -11,7 +11,7 @@ let handler = async (m, { conn, text, isRowner }) => {
   const newname = text.trim();
 
   try {
-    global.db.data.users[m.sender].namebot = newname;
+    global.db.data.settings[this.user.jid].namebot = newname;
 global.botname = newname;
 
     m.reply(`🎩 Nuevo Nombre Del Bot: ${newname}`);
