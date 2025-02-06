@@ -17,7 +17,7 @@ global.botname = newname;
     m.reply(`🎩 Nuevo Nombre Del Bot: ${newname}`);
   } catch (error) {
     console.error(error);
-    m.reply('🎩 Hubo un error al intentar cambiar el nombre del bot');
+    m.reply(`🎩 Hubo un error al intentar cambiar el nombre del bot ${error.message}`);
   }
 };
 
