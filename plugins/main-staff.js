@@ -1,6 +1,6 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
 let staff = `🚀 *EQUIPO DE AYUDANTES*
-🧿 *Bot:* ${global.botname}
+🧿 *Bot:* ${namebot}
 🌠 *Versión:* ${global.vs}
 
 • *AAMŌN* 
