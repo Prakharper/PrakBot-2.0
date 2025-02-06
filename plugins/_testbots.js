@@ -1,11 +1,11 @@
 import fetch from 'node-fetch';
 import axios from 'axios';
 
-let handler = async (m, { conn, text }) => {
-    if (!text) return m.reply('🍭 Ingresa un link de Terabox');
+let handler = async (m, { conn, args }) => {
+    if (!args[0]) return m.reply('🍭 Ingresa un link de Terabox');
 
 try {
-let api = await fetch(`https://dark-core-api.vercel.app/api/terabox?key=TWIzumi&url=${text}`);
+let api = await fetch(`https://dark-core-api.vercel.app/api/download/TeraBox?key=api&url=${args[0]}`);
 let json = await api.json();
 
 if (!json.success) return m.reply('❌ Error al obtener los detalles del enlace, por favor intenta nuevamente.');
