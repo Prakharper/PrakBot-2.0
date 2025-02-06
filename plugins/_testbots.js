@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, args }) => {
-    if (!args[0]) return m.reply('🍭 Ingresa un link de Terabox');
+if (!args[0]) return m.reply('🍭 Ingresa un link de Terabox');
 
 try {
 let api = `https://dark-core-api.vercel.app/api/download/TeraBox?key=api&url=${args[0]}`
@@ -18,10 +18,10 @@ let txt = `*「🍨」${filename}*`;
 
 await conn.sendMessage(m.chat, { document: { url: link }, mimetype: mime, fileName: filename }, { quoted: m });
 
-        await m.react('✅');
+      await m.react('✅');
     } catch (error) {
         console.error(error);
-        m.reply(`❌ Ocurrió un error al procesar la solicitud. ${error.message}`);
+m.reply(`❌ Ocurrió un error al procesar la solicitud. ${error.message}`);
     }
 }
 
