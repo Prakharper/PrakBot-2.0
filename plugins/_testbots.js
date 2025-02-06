@@ -16,7 +16,7 @@ let mime = json[0].size;
 
 let txt = `*「🍨」${filename}*`;
 
-await conn.sendMessage(m.chat, { document: { url: link }, mimetype: mime, fileName: filename }, { quoted: m });
+await conn.sendMessage(m.chat, { document: { url: link }, fileName: filename }, { quoted: m });
 
       await m.react('✅');
     } catch (error) {
