@@ -4,7 +4,7 @@ if (subBots.length === 0) {
 return conn.reply(m.chat, '🚫 No hay Sub Bots conectados.', m);
   }
 let message = '🌟 Sub Bots conectados:\n' + subBots.join('\n');
-    conn.reply(m.chat, message, m);
+m.reply(m.chat, message, m);
 }
 
 handler.command = ['testbot'];
