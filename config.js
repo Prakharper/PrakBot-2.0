@@ -34,7 +34,7 @@ global.prems = []
 
 global.packname = '【✧】𝐏𝐫𝐚𝐤𝐁𝐨𝐭࿐'
 // global.botname = '(✦◠‿◠) 𝑷𝒓𝒂𝒌𝑩𝒐𝒕-𝑴𝑫'
-global.botname = namebott;
+global.botname = namebot;
 global.wm = '⏤͟͟͞͞⋆⬪࣪ꥈ🚀★ ׄ ꒱ 𝑷𝒓𝒂𝒌𝑩𝒐𝒕 - 𝑺.𝑪.𝑨 ୭'
 global.author = '꒷꒦𖥻𝐁𝐲 𝐏𝐫𝐚𝐤 𝐇𝐚𝐫𝐩𝐞𝐫𓆪'
 global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ s𝗍ᥲrᥴ᥆rᥱ-𝗍ᥱᥲm'
