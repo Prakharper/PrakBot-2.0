@@ -1,4 +1,7 @@
-// Ruletaban By WillZek 
+/* RuletaBan By WillZek 
+- Elimina a un usuario aleatoria mente
+- https://github.com/WillZek 
+*/
 
 let handler = async (m, { conn, text, participants }) => {
 
