@@ -2,16 +2,16 @@
 
 let handler = async (m, { conn, text, participants }) => {
 
-    const groupAdmins = participants.filter(p => p.admin);
-    const botId = conn.user.jid;
-    const groupOwner = groupAdmins.find(p => p.isAdmin)?.id;
-    const groupNoAdmins = participants.filter(p => p.id !== botId && p.id !== groupOwner && !p.admin);
+const gAdmins = participants.filter(p => p.admin);
+const botId = conn.user.jid;
+const gOwner = gAdmins.find(p => p.isAdmin)?.id;
+const gNoAdmins = participants.filter(p => p.id !== botId && p.id !== gOwner && !p.admin);
 
-    if (participants.length === groupAdmins.length) { 
+    if (participants.length === gAdmins.length) { 
 return m.reply('*⚠️ Solo hay administradores en este grupo.*');
     }
 
-    const randomUser   = groupNoAdmins[Math.floor(Math.random() * groupNoAdmins.length)];
+    const randomUser   = gNoAdmins[Math.floor(Math.random() * gNoAdmins.length)];
 
     const tag = await conn.getName(randomUser .id);
 
