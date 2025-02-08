@@ -20,8 +20,6 @@ return m.reply(`✖️ Error: ${json.error || 'No se encontró ningún medio en 
 }
 
 let media = json.media;
-
-if (media.length > 0) {
 let arch = media[0];
 
 if (json.type === 'video') {
