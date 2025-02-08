@@ -7,26 +7,25 @@ const botId = conn.user.jid;
 const gOwner = gAdmins.find(p => p.isAdmin)?.id;
 const gNoAdmins = participants.filter(p => p.id !== botId && p.id !== gOwner && !p.admin);
 
-    if (participants.length === gAdmins.length) { 
+if (participants.length === gAdmins.length) { 
 return m.reply('*⚠️ Solo hay administradores en este grupo.*');
     }
 
-    const randomUser   = gNoAdmins[Math.floor(Math.random() * gNoAdmins.length)];
+const randomUser   = gNoAdmins[Math.floor(Math.random() * gNoAdmins.length)];
+const tag = await conn.getName(randomUser .id);
 
-    const tag = await conn.getName(randomUser .id);
+conn.reply(m.chat, `*🌠 Selección Aleatoria: ${tag}*\n> Serás Eliminado`, m, null);
 
-    conn.reply(m.chat, `*🌠 Selección Aleatoria: ${tag}*\n> Serás Eliminado`, m, null);
-
-    await conn.groupParticipantsUpdate(m.chat, [randomUser .id], 'remove');
-    conn.reply(m.chat, `*${tag}* Fue Eliminado Con Éxito 🎩`, m, null);
+await conn.groupParticipantsUpdate(m.chat, [randomUser .id], 'remove')
+conn.reply(m.chat, `*${tag}* Fue Eliminado Con Éxito 🎩`, m, null)
     m.react('✅');
 }
 
 handler.help = ['kickrandom']
-handler.tags = ['grupo'];
+handler.tags = ['grupo']
 handler.command = /^(kickrandom|ruletaban|rban|test)$/i;
-handler.group = true;
-handler.admin = true;
+handler.group = true
+handler.admin = true
 handler.botAdmin = true;
 
-export default handler;
+export default handler
