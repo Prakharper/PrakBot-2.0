@@ -13,12 +13,12 @@ return m.reply('*⚠️ Solo hay administradores en este grupo.*');
 
     const randomUser   = groupNoAdmins[Math.floor(Math.random() * groupNoAdmins.length)];
 
-    const nombreUsuario = await conn.getName(randomUser .id);
+    const tag = await conn.getName(randomUser .id);
 
-    conn.reply(m.chat, `*🌠 Selección Aleatoria: ${nombreUsuario}*\n> Serás Eliminado`, m, null);
+    conn.reply(m.chat, `*🌠 Selección Aleatoria: ${tag}*\n> Serás Eliminado`, m, null);
 
     await conn.groupParticipantsUpdate(m.chat, [randomUser .id], 'remove');
-    conn.reply(m.chat, `*${nombreUsuario}* Fue Eliminado Con Éxito 🎩`, m, null);
+    conn.reply(m.chat, `*${tag}* Fue Eliminado Con Éxito 🎩`, m, null);
     m.react('✅');
 }
 
