@@ -24,7 +24,7 @@ let handler = async(m, { conn, args, usedPrefix, command }) => {
                 await conn.sendMessage(m.chat, { video: { url: videoUrl }, caption: txt }, { quoted: fkontak });
                 m.react('✅');
 
-} else if (res?.type === 'image') {
+} else if (json?.type === 'image') {
                 let imageUrl = arch.url;
                 await conn.sendMessage(m.chat, { image: { url: imageUrl }, caption: '¡Imagen descargada con éxito!' }, { quoted: fkontak });
                 m.react('✅');
