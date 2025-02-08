@@ -9,6 +9,8 @@ let handler = async (m, { conn, text, groupMetadata, participants }) => {
 
     if (groupNoAdmins.length === 0) throw '*⚠️ No hay usuarios para eliminar.*'; 
 
+   if (groupAdmins) throw '*⚠️ En Éste Grupo Solo Hay Admins*';
+
     const randomUser  = groupNoAdmins[Math.floor(Math.random() * groupNoAdmins.length)];
 
     const nombreUsuario = await conn.getName(randomUser .id);
