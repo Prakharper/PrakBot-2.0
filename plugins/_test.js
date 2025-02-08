@@ -1,15 +1,13 @@
 import axios from 'axios';
 
-let handler = async (m, { conn, text, groupMetadata, participants }) => {
+let handler = async (m, { conn, text, participants }) => {
 
     const groupAdmins = participants.filter(p => p.admin);
     const botId = conn.user.jid;
     const groupOwner = groupAdmins.find(p => p.isAdmin)?.id;
     const groupNoAdmins = participants.filter(p => p.id !== botId && p.id !== groupOwner && !p.admin);
 
-    if (groupNoAdmins.length === 0) throw '*⚠️ No hay usuarios para eliminar.*'; 
-
-   if (groupAdmins) throw '*⚠️ En Éste Grupo Solo Hay Admins*';
+    if (groupNoAdmins.length === 0) throw '*⚠️ No hay usuarios para eliminar.*';
 
     const randomUser  = groupNoAdmins[Math.floor(Math.random() * groupNoAdmins.length)];
 
