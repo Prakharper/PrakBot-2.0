@@ -17,7 +17,7 @@ let api = `https://api.ryzendesu.vip/api/weebs/anime-info?query=${text}`;
 let responde = await fetch(api);
 let json = await response.json();
 
-let txt = `Nombre: ${json.title}\nUrl: ${json.url}\nCreado: ${json.createdAt}`;
+let txt = `Nombre: ${json.title}\nUrl: ${json.url}\nInformacion: ${json.synopsis}`;
 
 let img = json.image_url;
 
