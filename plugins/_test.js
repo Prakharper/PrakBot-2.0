@@ -5,7 +5,7 @@
 
 // [🌠] Twitter Downloader
 
-import fetch from 'node-fetch';
+/* import fetch from 'node-fetch';
 
 let handler = async(m, { conn, args, usedPrefix, command }) => {
 if (!args[0]) return m.reply('⬇️ Ingresa Un Link De Twitter');
