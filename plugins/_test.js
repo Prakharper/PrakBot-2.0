@@ -19,7 +19,7 @@ let json = await responde.json();
 
 let txt = `*Nombre:* ${json.name}\n*Artista:* ${json.artistName}\n*Duracion:* ${json.duration}\n*Letra:* ${json.plainLyrics}`;
 
-conn.reply(m.chat, txt, m, rcanal);
+conn.sendMessage(m.chat, { text: txt }, { quoted: fkontak });
 
 } catch (error) {
 console.log(error)
