@@ -17,7 +17,6 @@ let media = json.media;
 if (media.length > 0) {
 let arch = media[0];
 
-m.react('🕓')
 if (json.type === 'video') {
 let videoUrl = arch.url;
 let txt = `> *¡Descargado con éxito!*`;
@@ -41,7 +40,7 @@ m.react('✖️');
 
 handler.help = ['xdl'];
 handler.tag = ['descargas'];
-handler.command = ['test'];
+handler.command = ['xdl', 'twitterdl']
 handler.estrellas = 5;
 
 export default handler;
