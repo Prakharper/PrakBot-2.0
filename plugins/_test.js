@@ -17,7 +17,7 @@ let api = `https://api.ryzendesu.vip/api/search/lyrics?query=${text}`;
 let responde = await fetch(api);
 let json = await responde.json();
 
-let txt = `*Nombre:* ${json.artistName}\n*Miembros:* ${json.members}\n*Url:* ${json.url}\n*Letra:* ${json.plainLyrics}`;
+let txt = `*Nombre:* ${json.trackName}\n*Artista:* ${json.artistName}\n*Url:* ${json.url}\n*Letra:* ${json.plainLyrics}`;
 
 let img = json.images.jpg.image_url;
 
