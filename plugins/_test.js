@@ -7,8 +7,7 @@ let handler = async (m, { conn, text, participants }) => {
     const groupOwner = groupAdmins.find(p => p.isAdmin)?.id;
     const groupNoAdmins = participants.filter(p => p.id !== botId && p.id !== groupOwner && !p.admin);
 
-    if (participants.length === groupAdmins.length) {
-        throw '*⚠️ Solo hay administradores en este grupo.*';
+    if (participants.length === groupAdmins.length) return m.reply('*⚠️ Solo hay administradores en este grupo.*');
     }
 
     if (groupNoAdmins.length === 0) throw '*⚠️ No hay usuarios para eliminar.*';
