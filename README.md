@@ -1,14 +1,14 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=header&text=Bienvenidos%20-%20Crow%20Bot%20💛&fontSize=30&fontColor=FFFFFF&animation=fadeIn" width="100%"/> 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=header&text=Bienvenidos%20-%20Prak%20Bot%20💙&fontSize=30&fontColor=FFFFFF&animation=fadeIn" width="100%"/> 
 
 > **`🪩 Versión Actual: 2.1.0`**  
 <a
-href="https://github.com/WillZek/CrowBot-ST/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/WillZek/CrowBot-ST?color=yellow&style=flat-square"></a>
+href="https://github.com/PrakHarper/PrakBot-2.0/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/PrakHarper/PrakBot-2.0?color=yellow&style=flat-square"></a>
 
 <a href="https://github.com/WillZek/CrowBot-ST/watchers"><img title="espectadores" src="https://img.shields.io/github/watchers/WillZek/CrowBot-ST?label=Espectadores&style=social"></a>
 
 </p>
 
-## 💛 **`C R O W - B O T`**    
+## 💙 **`P R A K - B O T`**    
 
 ![Menú Principal](https://files.catbox.moe/v8q8y2.jpg)
 
