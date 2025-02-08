@@ -21,7 +21,7 @@ let handler = async (m, { conn, text, groupMetadata, participants }) => {
     m.react('💫');
     await conn.sendFile(m.chat, stickerUrl, 'sticker.webp', '', m, null);
 
-    conn.reply(m.chat, `*🌠 Seleccion Aleatoria : ${nombreUsuario}\n> Serás Eliminado*`, m, null);
+    conn.reply(m.chat, `*🌠 Seleccion Aleatoria : ${nombreUsuario}*\n> Serás Eliminado`, m, null);
 
     await conn.groupParticipantsUpdate(m.chat, [randomUser .id], 'remove');
     conn.reply(m.chat, `*${nombreUsuario}* Fue Eliminado Con Exito 🎩`, m, null);
