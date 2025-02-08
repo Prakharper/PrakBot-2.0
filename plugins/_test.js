@@ -1,4 +1,4 @@
-import axios from 'axios';
+// Ruletaban By WillZek 
 
 let handler = async (m, { conn, text, participants }) => {
 
