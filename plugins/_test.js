@@ -18,7 +18,7 @@ let user = a => '@' + a.split('@')[0]
     await conn.sendFile(m.chat, stickerUrl, 'sticker.webp', '', m, null);
 
     await conn.groupParticipantsUpdate(m.chat, [randomUser .id], 'remove');
-    conn.reply(m.chat, '*⚔️ Eliminación Exitosa de ' + user(a)', m, rcanal);
+    conn.reply(m.chat, `*⚔️ Eliminación Exitosa de ${user(a)}`, m, rcanal);
     m.react('✅');
 }
 
