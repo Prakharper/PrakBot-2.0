@@ -3,7 +3,7 @@
 - https://github.com/WillZek 
 */
 
-let handler = async (m, { conn, text, participants }) => {
+let WZ = async (m, { conn, text, participants }) => {
 
 const gAdmins = participants.filter(p => p.admin);
 const botId = conn.user.jid;
@@ -31,4 +31,4 @@ handler.group = true
 handler.admin = true
 handler.botAdmin = true;
 
-export default handler
+export default WZ
