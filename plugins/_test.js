@@ -3,6 +3,7 @@ import axios from 'axios';
 let handler = async (m, { conn, text, participants }) => {
 
 let user = a => '@' + a.split('@')[0]
+let a = ps.getRandom()
 
     const groupAdmins = participants.filter(p => p.admin);
     const botId = conn.user.jid;
@@ -18,7 +19,7 @@ let user = a => '@' + a.split('@')[0]
     await conn.sendFile(m.chat, stickerUrl, 'sticker.webp', '', m, null);
 
     await conn.groupParticipantsUpdate(m.chat, [randomUser .id], 'remove');
-    conn.reply(m.chat, `*⚔️ Eliminación Exitosa de ${randomUser}`, m, rcanal);
+    conn.reply(m.chat, `*⚔️ Eliminación Exitosa de ${user(a)}`, m, rcanal);
     m.react('✅');
 }
 
