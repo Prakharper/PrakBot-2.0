@@ -16,7 +16,6 @@ let handler = async(m, { conn, args, usedPrefix, command }) => {
 
         let media = json.media;
 
-        // Enviar el video
         if (json.type === 'video') {
             let videoUrl = media[0].url; // URL del video
             let txt = `> *¡Descargado con éxito!*`;
@@ -24,9 +23,9 @@ let handler = async(m, { conn, args, usedPrefix, command }) => {
             await conn.sendMessage(m.chat, { video: { url: videoUrl }, caption: txt }, { quoted: fkontak });
             m.react('✅');
         } 
-        // Enviar la imagen
+
         else if (json.type === 'photo') {
-            let imageUrl = media[0].url; // URL de la imagen
+            let imageUrl = media[0].url;
             await conn.sendMessage(m.chat, { image: { url: imageUrl }, caption: '¡Imagen descargada con éxito!' }, { quoted: fkontak });
             m.react('✅');
         } else {
