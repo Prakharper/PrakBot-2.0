@@ -9,17 +9,17 @@ import fetch from 'node-fetch';
 
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 
-if (!text) return m.reply(m.chat, '🍭 Ingresa Un Nombre De Repositorio o De Usuario De Github', m, rcanal);
+if (!text) return m.reply(m.chat, '🍭 Ingrese Un Nombre Del Algún Anime', m, rcanal);
 
 try {
-let api = 'https://dark-core-api.vercel.app/api/search/github?key=api&q=${text}';
+let api = `https://api.ryzendesu.vip/api/weebs/anime-info?query=${text}`;
 
 let responde = await fetch(api);
 let json = await response.json();
 
 let txt = `Nombre: ${json.name}\nDescripcion: ${json.description}\nCreado: ${json.createdAt}`;
 
-let img = 'https://cloud.dorratz.com/files/669d45d70d27913f08db78953c11903b';
+let img = json.image_url;
 
 conn.sendMessage(m.chat, { image: { url: img, caption: txt }, { quoted: fkontak }});
 
