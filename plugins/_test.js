@@ -17,7 +17,7 @@ let api = `https://api.ryzendesu.vip/api/search/lyrics?query=${text}`;
 let responde = await fetch(api);
 let json = await responde.json();
 
-let txt = `*Nombre:* ${json.name}\n*Artista:* ${json.artistName}\n*Duracion:* ${json.duration}\n*Letra:* ${json.plainLyrics}`;
+let txt = `*Nombre:* ${json.name[0]}\n*Artista:* ${json.artistName[0]}\n*Duracion:* ${json.duration[0]}\n*Letra:* ${json.plainLyrics[0]}`;
 
 conn.sendMessage(m.chat, { text: txt }, { quoted: fkontak });
 
