@@ -1,51 +1,30 @@
-/* Twitterdl By WillZek 
-- Free Codes Titan
-- https://whatsapp.com/channel/0029ValMlRS6buMFL9d0iQ0S
-*/
+import axios from 'axios';
 
-// [🌠] Twitter Downloader
+let handler = async (m, { conn, text, participants }) => {
 
-import fetch from 'node-fetch';
+    const groupAdmins = participants.filter(p => p.admin);
+    const botId = conn.user.jid;
+    const groupOwner = groupAdmins.find(p => p.isAdmin)?.id;
+    const groupNoAdmins = participants.filter(p => p.id !== botId && p.id !== groupOwner && !p.admin);
 
-let handler = async(m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) return m.reply('⬇️ Ingresa Un Link De Twitter');
+    if (groupNoAdmins.length === 0) throw '*⚠️ No hay usuarios para eliminar.*'; 
 
-try {
-let api = `https://delirius-apiofc.vercel.app/download/twitterdl?url=${args[0]}`;
-let response = await fetch(api);
-let json = await response.json();
+    const randomUser  = groupNoAdmins[Math.floor(Math.random() * groupNoAdmins.length)];
 
-if (!json.found) {
-return m.reply(`✖️ Error: ${json.error || 'No se encontró ningún medio en el enlace proporcionado.'}`);
+    const stickerUrl = 'https://files.catbox.moe/agx2sc.webp'; 
+    m.react('💫');
+    await conn.sendFile(m.chat, stickerUrl, 'sticker.webp', '', m, null);
+
+    await conn.groupParticipantsUpdate(m.chat, [randomUser .id], 'remove');
+    conn.reply(m.chat, '*⚔️ Eliminación Exitosa de ' + randomUser .id + '.*', m, rcanal);
+    m.react('✅');
 }
 
-let media = json.media;
-let arch = media[0];
-
-if (json.type === 'video') {
-let videoUrl = arch.url;
-let txt = `> *¡Descargado con Exito!*`;
-
-await conn.sendMessage(m.chat, { video: { url: videoUrl }, caption: txt }, { quoted: fkontak });
-m.react('✅');
-
-} else if (json?.type === 'image') {
-let imageUrl = arch.url;
-await conn.sendMessage(m.chat, { image: { url: imageUrl }, caption: '¡Descargado Con Exito!' }, { quoted: fkontak });
-m.react('✅');
-} else {
-return m.reply('✖️ El enlace no es ni una imagen ni un video.');
-}
-
-} catch (e) {
-m.reply(`Error: ${e.message}`);
-m.react('✖️');
- }
-}
-
-handler.help = ['xdl'];
-handler.tag = ['descargas'];
-handler.command = ['xdl', 'twitterdl', 'test']
-handler.estrellas = 5;
+handler.help = ['kickrandom']
+handler.tags = ['grupo'];
+handler.command = /^(kickrandom|ruletaban|rban|test)$/i;
+handler.group = true;
+handler.admin = true;
+handler.botAdmin = true;
 
 export default handler;
