@@ -16,20 +16,26 @@ let handler = async(m, { conn, args, usedPrefix, command }) => {
 
         let media = json.media;
 
-        if (json.type === 'video') {
-            let videoUrl = media[0].url; // URL del video
-            let txt = `> *¡Descargado con éxito!*`;
+        if (media.length > 0) {
+            let arch = media[0];
 
-            await conn.sendMessage(m.chat, { video: { url: videoUrl }, caption: txt }, { quoted: fkontak });
-            m.react('✅');
-        } 
+            if (json.type === 'video') {
+                let videoUrl = arch.url;
+                let txt = `> *¡Descargado con éxito!*`;
 
-        else if (json.type === 'photo') {
-            let imageUrl = media[0].url;
-            await conn.sendMessage(m.chat, { image: { url: imageUrl }, caption: '¡Imagen descargada con éxito!' }, { quoted: fkontak });
-            m.react('✅');
+                await conn.sendMessage(m.chat, { video: { url: videoUrl }, caption: txt }, { quoted: fkontak });
+                m.react('✅');
+            } 
+
+            else if (json.type === 'photo') {
+                let imageUrl = arch.url;
+                await conn.sendMessage(m.chat, { image: { url: imageUrl }, caption: '¡Imagen descargada con éxito!' }, { quoted: fkontak });
+                m.react('✅');
+            } else {
+                return m.reply('✖️ El enlace no es ni una imagen ni un video.');
+            }
         } else {
-            return m.reply('✖️ El enlace no es ni una imagen ni un video.');
+            return m.reply('✖️ No hay medios disponibles en el enlace proporcionado.');
         }
 
     } catch (e) {
