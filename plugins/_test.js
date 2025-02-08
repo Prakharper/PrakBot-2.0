@@ -17,10 +17,6 @@ let handler = async (m, { conn, text, groupMetadata, participants }) => {
 
     const nombreUsuario = await conn.getName(randomUser .id);
 
-    const stickerUrl = 'https://files.catbox.moe/agx2sc.webp'; 
-    m.react('💫');
-    await conn.sendFile(m.chat, stickerUrl, 'sticker.webp', '', m, null);
-
     conn.reply(m.chat, `*🌠 Seleccion Aleatoria : ${nombreUsuario}*\n> Serás Eliminado`, m, null);
 
     await conn.groupParticipantsUpdate(m.chat, [randomUser .id], 'remove');
