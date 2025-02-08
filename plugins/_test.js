@@ -21,7 +21,7 @@ let txt = `Nombre: ${json.title}\nUrl: ${json.url}\nInformacion: ${json.synopsis
 
 let img = json.images.jpg.image_url;
 
-conn.sendMessage(m.chat, { image: { url: img, caption: txt }, quoted: fkontak });
+conn.sendMessage(m.chat, { image: { url: img, caption: txt }, { quoted: fkontak });
 
 } catch (error) {
 console.log(error)
