@@ -1,5 +1,3 @@
-// Twitterdl By WillZek 
-
 import fetch from 'node-fetch';
 
 let handler = async(m, { conn, args, usedPrefix, command }) => {
@@ -11,7 +9,7 @@ let handler = async(m, { conn, args, usedPrefix, command }) => {
         let json = await response.json();
 
         if (!json.found) {
-            return m.reply('✖️ No se encontró ningún medio en el enlace proporcionado.');
+            return m.reply(`✖️ Error: ${json.error || 'No se encontró ningún medio en el enlace proporcionado.'}`);
         }
 
         let media = json.media;
@@ -25,9 +23,7 @@ let handler = async(m, { conn, args, usedPrefix, command }) => {
 
                 await conn.sendMessage(m.chat, { video: { url: videoUrl }, caption: txt }, { quoted: fkontak });
                 m.react('✅');
-            } 
-
-            else if (json.type === 'photo') {
+            } else if (json.type === 'photo') {
                 let imageUrl = arch.url;
                 await conn.sendMessage(m.chat, { image: { url: imageUrl }, caption: '¡Imagen descargada con éxito!' }, { quoted: fkontak });
                 m.react('✅');
