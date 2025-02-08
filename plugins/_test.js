@@ -51,3 +51,4 @@ handler.command = ['xdl', 'twitterdl', 'test']
 handler.estrellas = 5;
 
 export default handler;
+*/
