@@ -15,13 +15,13 @@ try {
 let api = `https://api.ryzendesu.vip/api/weebs/anime-info?query=${text}`;
 
 let responde = await fetch(api);
-let json = await response.json();
+let json = await responde.json();
 
-let txt = `Nombre: ${json.title[0]}\nUrl: ${json.url[0]}\nInformacion: ${json.synopsis[0]}`;
+let txt = `Nombre: ${json.title}\nUrl: ${json.url}\nInformacion: ${json.synopsis}`;
 
-let img = json.image_url[0];
+let img = json.images.jpg.image_url;
 
-conn.sendMessage(m.chat, { image: { url: img, caption: txt }, { quoted: fkontak }});
+conn.sendMessage(m.chat, { image: { url: img, caption: txt }, quoted: fkontak });
 
 } catch (error) {
 console.log(error)
