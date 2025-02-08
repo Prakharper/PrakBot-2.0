@@ -1,5 +1,5 @@
 /* RuletaBan By WillZek 
-- Elimina a un usuario aleatoria mente
+- Elimina a un usuario aleatoriamente
 - https://github.com/WillZek 
 */
 
