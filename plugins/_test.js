@@ -16,7 +16,7 @@ let handler = async (m, { conn, text, participants }) => {
     await conn.sendFile(m.chat, stickerUrl, 'sticker.webp', '', m, null);
 
     await conn.groupParticipantsUpdate(m.chat, [randomUser .id], 'remove');
-    conn.reply(m.chat, '*⚔️ Eliminación Exitosa de ' + randomUser .id + '.*', m, rcanal);
+    conn.reply(m.chat, '*⚔️ Eliminación Exitosa de ' + randomUser .notify + '.*', m, rcanal);
     m.react('✅');
 }
 
