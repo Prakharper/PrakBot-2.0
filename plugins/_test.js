@@ -2,10 +2,6 @@ import axios from 'axios';
 
 let handler = async (m, { conn, text, groupMetadata, participants }) => {
 
-    let user = a => '@+' + a.split('@')[0];
-    let ps = groupMetadata.participants.map(v => v.id);
-    let a = ps.getRandom();
-
     const groupAdmins = participants.filter(p => p.admin);
     const botId = conn.user.jid;
     const groupOwner = groupAdmins.find(p => p.isAdmin)?.id;
