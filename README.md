@@ -4,7 +4,7 @@
 <a
 href="https://github.com/PrakHarper/PrakBot-2.0/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/PrakHarper/PrakBot-2.0?color=yellow&style=flat-square"></a>
 
-<a href="https://github.com/WillZek/CrowBot-ST/watchers"><img title="espectadores" src="https://img.shields.io/github/watchers/WillZek/CrowBot-ST?label=Espectadores&style=social"></a>
+<a href="https://github.com/PrakHarper/PrakBot-2.0/watchers"><img title="espectadores" src="https://img.shields.io/github/watchers/PrakHarper/PrakBot-2.0?label=Espectadores&style=social"></a>
 
 </p>
 
