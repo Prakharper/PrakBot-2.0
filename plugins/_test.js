@@ -1,34 +1,35 @@
-/* RuletaBan By WillZek 
-- Elimina a un usuario aleatoriamente
+/* Anime Info By WillZek 
+- Free Codes Titan 
 - https://github.com/WillZek 
 */
 
-let SCC = async (m, { conn, text, participants }) => {
+// [🔎] Anime Info
 
-const gAdmins = participants.filter(p => p.admin);
-const botId = conn.user.jid;
-const gOwner = gAdmins.find(p => p.isAdmin)?.id;
-const gNoAdmins = participants.filter(p => p.id !== botId && p.id !== gOwner && !p.admin);
+import fetch from 'node-fetch';
 
-if (participants.length === gAdmins.length) { 
-return m.reply('*⚠️ Solo hay administradores en este grupo.*');
-    }
+let handler = async(m, { conn, text, usedPrefix, command }) => {
 
-const randomUser   = gNoAdmins[Math.floor(Math.random() * gNoAdmins.length)];
-const tag = await conn.getName(randomUser .id);
+if (!text) return m.reply(m.chat, '🍭 Ingresa Un Nombre De Repositorio o De Usuario De Github', m, rcanal);
 
-conn.reply(m.chat, `*🌠 Selección Aleatoria: ${tag}*\n> Serás Eliminado`, m, null);
+try {
+let api = 'https://dark-core-api.vercel.app/api/search/github?key=api&q=${text}';
 
-await conn.groupParticipantsUpdate(m.chat, [randomUser .id], 'remove')
-conn.reply(m.chat, `*${tag}* Fue Eliminado Con Éxito 🎩`, m, null)
-    m.react('✅');
-}
+let responde = await fetch(api);
+let json = await response.json();
 
-handler.help = ['ruletaban']
-handler.tags = ['grupo']
-handler.command = /^(kickrandom|ruletaban|rban)$/i;
-handler.group = true
-handler.admin = true
-handler.botAdmin = true;
+let txt = `Nombre: ${json.name}\nDescripcion: ${json.description}\nCreado: ${json.createdAt}`;
 
-export default SCC
+let img = 'https://cloud.dorratz.com/files/669d45d70d27913f08db78953c11903b';
+
+conn.sendMessage(m.chat, { image: { url: img, caption: txt }, { quoted: fkontak }});
+
+} catch (error) {
+console.log(error)
+m.reply(`*Error:* ${error.message}`);
+m.reply('✖️');
+ }
+};
+
+handler.command = ['test'];
+
+export default handler;
