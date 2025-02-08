@@ -17,6 +17,7 @@ let media = json.media;
 if (media.length > 0) {
 let arch = media[0];
 
+m.react('🕓')
 if (json.type === 'video') {
 let videoUrl = arch.url;
 let txt = `> *¡Descargado con éxito!*`;
