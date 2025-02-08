@@ -24,9 +24,9 @@ conn.reply(m.chat, `*${tag}* Fue Eliminado Con Éxito 🎩`, m, null)
     m.react('✅');
 }
 
-handler.help = ['kickrandom']
+handler.help = ['ruletaban']
 handler.tags = ['grupo']
-handler.command = /^(kickrandom|ruletaban|rban|test)$/i;
+handler.command = /^(kickrandom|ruletaban|rban)$/i;
 handler.group = true
 handler.admin = true
 handler.botAdmin = true;
