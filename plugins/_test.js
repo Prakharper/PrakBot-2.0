@@ -19,8 +19,6 @@ let json = await responde.json();
 
 let txt = `*Nombre:* ${json.trackName}\n*Artista:* ${json.artistName}\n*Duracion:* ${json.duration}\n*Letra:* ${json.plainLyrics}`;
 
-let img = json.images.jpg.image_url;
-
 conn.reply(m.chat, txt, m, rcanal);
 
 } catch (error) {
