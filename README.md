@@ -10,7 +10,7 @@ href="https://github.com/PrakHarper/PrakBot-2.0/stargazers/"><img title="Stars" 
 
 ## 💙 **`P R A K - B O T`**    
 
-![Menú Principal](https://files.catbox.moe/v8q8y2.jpg)
+![Menú Principal](https://files.catbox.moe/sx42eg.jpg)
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>   
 
