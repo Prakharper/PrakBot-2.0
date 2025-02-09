@@ -22,7 +22,7 @@ let txt = `*Nombre:* ${crow.title}\n*Letra:* ${crow.lyrics}`;
 
 let img = json.results.thumbs;
 
-conn.sendMessage(m.chat, { image: { url: img, caption: txt }, { quoted: fkontak });
+conn.sendMessage(m.chat, { image: { url: img }, caption: txt }, { quoted: fkontak });
 
 } catch (error) {
 console.log(error)
