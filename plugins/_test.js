@@ -23,7 +23,7 @@ let resul = `*Título:* ${crow.title}`;
 let img = crow.image;
 let vid = crow.files.low;
 
-await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal);
+await conn.sendFile(m.chat, img, 'crow.jpg', txt, m, null, rcanal);
 await conn.sendMessage(m.chat, { video: { url: vid }, caption: resul },{ quoted: m });
 
 } catch (e) {
