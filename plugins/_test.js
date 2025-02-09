@@ -1,15 +1,15 @@
-/* Anime Info By WillZek 
+/* Lyrics By WillZek 
 - Free Codes Titan 
 - https://github.com/WillZek 
 */
 
-// [🔎] Anime Info
+// [⌨️] Letra De Cancion
 
 import fetch from 'node-fetch';
 
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 
-if (!text) return m.reply(m.chat, '🍭 Ingrese Un Nombre Del Algún Anime', m, rcanal);
+if (!text) return m.reply(m.chat, '🍭 Ingrese Un Nombre De Alguna Cancion', m, rcanal);
 
 try {
 let api = `https://archive-ui.tanakadomp.biz.id/search/lirik?q=${text}`;
@@ -31,6 +31,6 @@ m.reply('✖️');
  }
 };
 
-handler.command = ['test'];
+handler.command = ['lyrics'];
 
 export default handler;
