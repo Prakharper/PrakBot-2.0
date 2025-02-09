@@ -29,7 +29,7 @@ await conn.sendMessage(m.chat, { video: vid, caption: resul }, { quoted: m })
 } catch (e) {
 console.log(e)
 m.reply('*No se pudo obtener la letra De su canción*');
-m.reply('✖️');
+m.react('✖️');
  }
 };
 
