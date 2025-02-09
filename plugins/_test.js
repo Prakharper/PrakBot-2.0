@@ -24,9 +24,9 @@ let img = crow.thumb;
 
 conn.sendMessage(m.chat, { image: { url: img }, caption: txt }, { quoted: fkontak });
 
-} catch (error) {
-console.log(error)
-m.reply(`*Error:* ${error.message}`);
+} catch (e) {
+console.log(e)
+m.reply('*No se pudo obtener la letra De su canción*');
 m.reply('✖️');
  }
 };
