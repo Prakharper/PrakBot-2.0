@@ -18,7 +18,7 @@ let responde = await fetch(api);
 let json = await responde.json();
 let crow = json.result;
 
-let txt = `*Nombre:* ${crow.title}\n*Letra:* ${crow.lyrics}`;
+let txt = `*Resultado:* ${crow.title}\n> Powered By CrowBot`;
 
 let img = crow.image;
 
