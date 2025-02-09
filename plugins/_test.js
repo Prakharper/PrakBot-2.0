@@ -16,10 +16,13 @@ let api = `https://api.ryzendesu.vip/api/search/lyrics?query=${text}`;
 
 let responde = await fetch(api);
 let json = await responde.json();
+let crow = json.results;
 
-let txt = `*Nombre:* ${json.name}\n*Artista:* ${json.artistName}\n*Duracion:* ${json.duration}\n*Letra:* ${json.plainLyrics}`;
+let txt = `*Nombre:* ${crow.title}\n*Letra:* ${crow.lyrics}`;
 
-conn.sendMessage(m.chat, { text: txt }, { quoted: fkontak });
+let img = json.results.thumbs;
+
+conn.sendMessage(m.chat, { image: { url: img, caption: txt }, { quoted: fkontak });
 
 } catch (error) {
 console.log(error)
