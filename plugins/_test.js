@@ -20,7 +20,7 @@ let crow = json.result;
 
 let txt = `*Nombre:* ${crow.title}\n*Letra:* ${crow.lyrics}`;
 
-let img = crow.thumb;
+let img = crow.image;
 
 conn.sendMessage(m.chat, { image: { url: img }, caption: txt }, { quoted: fkontak });
 
