@@ -24,7 +24,7 @@ let img = crow.image;
 let vid = crow.files.low;
 
 await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal);
-await conn.sendMessage(m.chat, { video: vid, caption: resul }, { quoted: m })
+await conn.sendMessage(m.chat, { video: { url: vid }, caption: resul },{ quoted: m });
 
 } catch (e) {
 console.log(e)
