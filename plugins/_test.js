@@ -7,12 +7,12 @@
 
 import fetch from 'node-fetch';
 
-let handler = async(m, { conn, text, usedPrefix, command }) => {
+let handler = async(m, { conn, args, usedPrefix, command }) => {
 
-if (!text) return m.reply(m.chat, '🍭 Ingrese Un Nombre De Alguna Cancion', m, rcanal);
+if (!args[0]) return m.reply(m.chat, '🍭 Ingresa Un Link De Xnxx', m, rcanal);
 
 try {
-let api = `https://archive-ui.tanakadomp.biz.id/search/lirik?q=${text}`;
+let api = `https://archive-ui.tanakadomp.biz.id/download/xnxx?url=${args[0]}`;
 
 let responde = await fetch(api);
 let json = await responde.json();
