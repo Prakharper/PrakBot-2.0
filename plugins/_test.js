@@ -33,6 +33,6 @@ m.react('✖️');
  }
 };
 
-handler.command = ['xnxxdltest'];
+handler.command = ['xnxxdl'];
 
 export default handler;
