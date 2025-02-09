@@ -12,7 +12,7 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
 if (!text) return m.reply(m.chat, '🍭 Ingrese Un Nombre Del Algún Anime', m, rcanal);
 
 try {
-let api = `https://api.ryzendesu.vip/api/search/lyrics?query=${text}`;
+let api = `https://archive-ui.tanakadomp.biz.id/search/lirik?q=${text}`;
 
 let responde = await fetch(api);
 let json = await responde.json();
