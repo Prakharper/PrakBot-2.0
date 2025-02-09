@@ -1,9 +1,9 @@
-/* Lyrics By WillZek 
+/* Xnnxdl By WillZek 
 - Free Codes Titan 
 - https://github.com/WillZek 
 */
 
-// [⌨️] Letra De Cancion
+// [🍨] XNXX - DOWNLOADER
 
 import fetch from 'node-fetch';
 
