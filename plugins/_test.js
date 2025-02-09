@@ -19,10 +19,12 @@ let json = await responde.json();
 let crow = json.result;
 
 let txt = `*Enviando Resultados*\n> Powered By CrowBot`;
-
+let resul = `*Título:* ${crow.title}`;
 let img = crow.image;
+let vid = crow.;
 
-conn.sendMessage(m.chat, { image: { url: img }, caption: txt }, { quoted: fkontak });
+await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal);
+await conn.sendMessage(m.chat, { video: vid, caption: resul }, { quoted: m })
 
 } catch (e) {
 console.log(e)
