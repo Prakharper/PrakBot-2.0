@@ -16,7 +16,7 @@ let api = `https://archive-ui.tanakadomp.biz.id/search/lirik?q=${text}`;
 
 let responde = await fetch(api);
 let json = await responde.json();
-let crow = json.results[0];
+let crow = json.result;
 
 let txt = `*Nombre:* ${crow.title}\n*Letra:* ${crow.lyrics}`;
 
