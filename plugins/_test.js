@@ -28,11 +28,11 @@ await conn.sendMessage(m.chat, { video: { url: vid }, caption: resul },{ quoted:
 
 } catch (e) {
 console.log(e)
-m.reply('*No se pudo obtener la letra De su canción*');
+m.reply('*No Encontré Resultados*');
 m.react('✖️');
  }
 };
 
-handler.command = ['lyrics'];
+handler.command = ['xnxxdltest'];
 
 export default handler;
