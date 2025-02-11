@@ -6,11 +6,11 @@ return conn.reply(m.chat, '🎌 *¡Este chat no está registrado!*', m, fake);
 }
 
 if (args[0] == 'on') {
-chat.isBanned = true;
+chat.isBanned = false;
 conn.reply(m.chat, `🍭 *CrowBot-ST ya fue desbaneado en este chat*`, m, rcanal);
 
 } else if (args[0] == 'off') {
-chat.isBanned = false;
+chat.isBanned = true;
 conn.reply(m.chat, `✅ *El Bot Ha Sido Desactivado En Este Chat*`, m, rcanal);
   }
 }
