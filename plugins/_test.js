@@ -1,14 +1,14 @@
 let handler = async (m, { args, conn }) => {
 
+let chat = global.db.data.chats[m.chat];
+
 if (args[0] == 'off') {
-        global.db.data.chats[m.chat].isBanned = true;
+chat.isBanned = true;
 conn.reply(m.chat, `✅ *El Bot Ha Sido Desactivado En Este Chat*`, m, rcanal);
 }
 
 if (args[0] == 'on') {
 if (!(m.chat in global.db.data.chats)) return conn.reply(m.chat, '🎌 *¡Este chat no está registrado!*', m, fake)
-
-let chat = global.db.data.chats[m.chat];
 
 if (chat.isBanned === undefined) {
 chat.isBanned = false
