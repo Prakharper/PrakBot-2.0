@@ -17,7 +17,7 @@ chat.isBanned = false
 if (!chat.isBanned) return conn.reply(m.chat, '[🌠] *El bot no está baneado en este chat*', m, fake);
 chat.isBanned = false
 
-conn.reply(m.chat, `${emojis} *CrowBot-ST ya fué desbaneado en este chat*`, m, fake);
+conn.reply(m.chat, `🍭 *CrowBot-ST ya fué desbaneado en este chat*`, m, fake);
   }
 }
 
