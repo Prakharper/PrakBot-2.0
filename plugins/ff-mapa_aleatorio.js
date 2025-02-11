@@ -1,9 +1,9 @@
 let handler = async(m, { conn }) => {
 
 let map = '*Aquí Tienes 🍨*';
-let mimg = [
-"https://files.catbox.moe/l3rzl1.jpg",
-"https://files.catbox.moe/mthxrp.jpg"
+let mimg = [ 
+'https://files.catbox.moe/l3rzl1.jpg',
+'https://files.catbox.moe/mthxrp.jpg',
 ].getRandom()
 
 conn.sendMessage(m.chat, { image: { url: mimg }, caption: map }, { quoted: fkontak });
