@@ -14,6 +14,7 @@ if (!chat.isBanned) return conn.reply(m.chat, '[🌠] *El bot no está baneado e
 chat.isBanned = false
 
 await conn.reply(m.chat, `${emojis} *CrowBot-ST ya fué desbaneado en este chat*`, m, fake)
+  }
 }
 
 handler.command = ['test']
