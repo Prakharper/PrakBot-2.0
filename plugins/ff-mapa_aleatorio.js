@@ -1,6 +1,6 @@
 let handler = async(m, { conn }) => {
 
-let map = '*Aquí Tienes 🍨*';
+let map = '> *Aquí Tienes 🍨*';
 let mimg = [ 
 'https://files.catbox.moe/l3rzl1.jpg',
 'https://files.catbox.moe/mthxrp.jpg',
