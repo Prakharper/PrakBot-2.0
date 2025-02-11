@@ -10,10 +10,6 @@ conn.reply(m.chat, `✅ *El Bot Ha Sido Desactivado En Este Chat*`, m, rcanal);
 if (args[0] == 'on') {
 if (!(m.chat in global.db.data.chats)) return conn.reply(m.chat, '🎌 *¡Este chat no está registrado!*', m, fake)
 
-if (chat.isBanned) {
-chat.isBanned = false
-}
-
 if (!chat.isBanned) return conn.reply(m.chat, '[🌠] *El bot no está baneado en este chat*', m, fake);
 chat.isBanned = false
 
