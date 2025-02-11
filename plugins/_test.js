@@ -1,19 +1,22 @@
-let handler = async(m, { conn, usedPrefix }) => {
+let handler = async (m, { args, conn }) => {
 
-let ff = `M E N U - F F\n\n`
-    ff += `🌆 ${usedPrefix} 4vs4\n`
-    ff += `🌆 ${usedPrefix} Br\n`
-    ff += `🌆 ${usedPrefix} Mapa (Mapa Aleatorio)\n`
-    ff += `🌆 ${usedPrefix} topff\n`
-    ff += `🌆 ${usedPrefix} vermochilas\n`
-    ff += `${textbot}`
-
-let img = 'https://files.catbox.moe/l6jzeo.jpeg';
-
-conn.sendMessage(m.chat, { image: { url: img }, caption: ff }, { quoted: fkontak });
-m.react('🔫');
+if (args[0] == 'off') {
+global.db.data.chats[m.chat].isBanned = true
+conn.reply(m.chat, `✅ *El Bot Ha Sido Desactivado En Este Chat*`, m, rcanal)
 }
 
-handler.command = ['menuff'];
+if (args[0] == 'on') {
+ if (!(m.chat in global.db.data.chats)) return conn.reply(m.chat, '🎌 *¡Este chat no está registrado!*', m, fake)
+
+let chat = global.db.data.chats[m.chat]
+
+if (!chat.isBanned) return conn.reply(m.chat, '[🌠] *El bot no está baneado en este chat*', m, fake)
+chat.isBanned = false
+
+await conn.reply(m.chat, `${emojis} *CrowBot-ST ya fué desbaneado en este chat*`, m, fake)
+}
+
+handler.command = ['test']
+
 
 export default handler
