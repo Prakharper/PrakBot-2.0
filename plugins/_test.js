@@ -18,5 +18,4 @@ await conn.reply(m.chat, `${emojis} *CrowBot-ST ya fué desbaneado en este chat*
 
 handler.command = ['test']
 
-
 export default handler
