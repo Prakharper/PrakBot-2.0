@@ -1,4 +1,4 @@
-let handler = async(m, { conn, usedPrefix }) => {
+let handler = async(m, { conn }) => {
 
 let vs = `🩵 4 VS 4 - FREE FIRE\n\n`
     vs += `🛡️ PARTICIPANTES:\n
