@@ -21,7 +21,7 @@ m.react(rwait);
 
 let video;
 try {
-      video = await (await fetch(`https://api.alyachan.dev/api/youtube?url=${videoInfo.url}&type=mp4&apikey=Gata-Dios`)).json();
+      video = await (await fetch(`https://api.alyachan.dev/api/youtube?url=${text}&type=mp4&apikey=Gata-Dios`)).json();
 } catch (error) {
 try {
       video = await (await fetch(`https://delirius-apiofc.vercel.app/download/ytmp4?url=${videoInfo.url}`)).json();
