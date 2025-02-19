@@ -3,7 +3,6 @@
 */
 
 import fetch from 'node-fetch';
-import yts from 'yt-search';
 
 let handler = async(m, { conn, args, text }) => {
 
