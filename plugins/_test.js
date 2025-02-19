@@ -9,14 +9,6 @@ let handler = async(m, { conn, args, text }) => {
 
 if (!text) return m.reply('Ingrese Un Link De YouTube');
 
-const search = await yts(text);
-
-if (!search.all || search.all.length === 0) {
-    throw "No se encontraron resultados para tu búsqueda.";
-  }
-
-const videoInfo = search.all[0];
-
 m.react(rwait);
 
 let video;
@@ -24,9 +16,9 @@ try {
       video = await (await fetch(`https://api.alyachan.dev/api/ytv?url=${text}&apikey=Gata-Dios`)).json();
 } catch (error) {
 try {
-      video = await (await fetch(`https://delirius-apiofc.vercel.app/download/ytmp4?url=${videoInfo.url}`)).json();
+      video = await (await fetch(`https://delirius-apiofc.vercel.app/download/ytmp4?url=${text}`)).json();
 } catch (error) {
-      video = await (await fetch(`https://api.vreden.my.id/api/ytmp4?url=${videoInfo.url}`)).json();
+      video = await (await fetch(`https://api.vreden.my.id/api/ytmp4?url=${text}`)).json();
       }
     }
 
