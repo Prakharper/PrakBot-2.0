@@ -3,10 +3,19 @@
 */
 
 import fetch from 'node-fetch';
+import yts from 'yt-search';
 
-let handler = async(m, { conn, args }) => {
+let handler = async(m, { conn, args, text }) => {
 
-if (!args[0]) return m.reply('Ingrese Un Link De YouTube');
+if (!text) return m.reply('Ingrese Un Link De YouTube');
+
+const search = await yts(text);
+
+if (!search.all || search.all.length === 0) {
+    throw "No se encontraron resultados para tu búsqueda.";
+  }
+
+const videoInfo = search.all[0];
 
 m.react(rwait);
 
