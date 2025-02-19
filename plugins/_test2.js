@@ -1,4 +1,4 @@
-let handler = async(m, { conn, command }) => {
+let handler = async (m, { conn, usedPrefix, command }) => {
 
 let pp = await conn.profilePictureUrl(m.chat, 'image').catch((_) => null) || 'https://files.catbox.moe/kd7vs5.jpg';
 
