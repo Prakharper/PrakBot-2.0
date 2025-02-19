@@ -8,7 +8,7 @@ let p = 'https://files.catbox.moe/i8fk7k.jpg';
 
 let ppp = await fetch(`https://api.lyrax.net/api/maker/welcome1?name=WillZek&gpname=CrowBot&member=3&pp=https://files.catbox.moe/i8fk7k.jpg&bg=https://files.catbox.moe/i8fk7k.jpg&apikey=5f6682c9`);
 
-let buffer = await ppp.buffer();
+let buffer = await ppp.arrayBuffer();
 
 conn.sendMessage(m.chat, { image: { url: buffer }, caption: 'Prueba' }, { quoted: fkontak });
 }
