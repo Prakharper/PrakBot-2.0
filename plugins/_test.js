@@ -2,6 +2,40 @@
 - Recuerda Instalar La Dependencia "@hiudyy/ytdl"
 */
 
+import fetch from 'node-fetch';
+
+let handler = async(m, { conn, args }) => {
+
+if (!args[0]) return m.reply('Ingrese Un Link De YouTube');
+
+m.react(rwait);
+
+let video;
+try {
+      video = await (await fetch(`https://api.alyachan.dev/api/youtube?url=${videoInfo.url}&type=mp4&apikey=Gata-Dios`)).json();
+} catch (error) {
+try {
+      video = await (await fetch(`https://delirius-apiofc.vercel.app/download/ytmp4?url=${videoInfo.url}`)).json();
+} catch (error) {
+      video = await (await fetch(`https://api.vreden.my.id/api/ytmp4?url=${videoInfo.url}`)).json();
+      }
+    }
+
+if (!video.data || !video.data.url) throw "No se pudo obtener el video.";
+
+await conn.sendMessage(m.chat, {
+      video: { url: video.data.url },
+      mimetype: "video/mp4",
+      caption: ``,
+    }, { quoted: m });
+    m.react(done);
+}
+
+handler.command = ['test']
+
+export default handler;
+
+/*
 import { ytmp4 } from '@hiudyy/ytdl';
 
 let handler = async(m, { conn, args, command, usedPrefix }) => {
@@ -16,3 +50,4 @@ conn.sendMessage(m.chat, { video: { url: vid }, caption: 'Aqui Tiene✨', fileNa
 handler.command = ['test'];
 
 export default handler;
+*/
