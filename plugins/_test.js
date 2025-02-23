@@ -9,18 +9,18 @@ let api = await (await fetch(`https://dark-core-api.vercel.app/api/search/youtub
 
 let results = api.results[0];
 
-let ST = `✨ *Título:* ${results.title}\n📎 *Link:* ${results.url}\n🍭 *Canal:* ${results.channel}\n📆*Publicado:* ${results.published}`;
+let txt = `✨ *Título:* ${results.title}\n📎 *Link:* ${results.url}\n🍭 *Canal:* ${results.channel}\n📆*Publicado:* ${results.published}`;
 
 let img = results.thumbnail
 
 conn.sendMessage(m.chat, { 
         image: { url: img }, 
-        caption: ST, 
+        caption: txt, 
         footer: dev, 
         buttons: [
             {
                 buttonId: `.ytmp4 ${results.url}`,
-                buttonText: { displayText: 'Obtener Vídeo' }
+                buttonText: { displayText: 'Obtener Video' }
             }
         ],
         viewOnce: true,
