@@ -12,5 +12,24 @@ let ST = `✨ *Título:* ${api.results.title}\n📎 *Link:* ${api.results.url}\n
 
 let img = api.results.thumbnail
 
+conn.sendMessage(m.chat, { 
+        image: { url: img }, 
+        caption: ST, 
+        footer: dev, 
+        buttons: [
+            {
+                buttonId: `.ytmp4 ${api.results.url}`,
+                buttonText: { displayText: 'Obtener Vídeo' }
+            }
+        ],
+        viewOnce: true,
+        headerType: 4
+    }, { quoted: m });
+}
+
+handler.command = ['test'];
+
+export default handler
+
 
 
