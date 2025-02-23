@@ -5,13 +5,13 @@ let handler = async(m, { conn, usedPrefix, command, text }) => {
 if (!text) return m.reply(`🍭 Ingresa Un Texto Para Buscar En Youtube\n> *Ejemplo:* ${usedPrefix + command}crow edits`);
 
 try {
-let api = await (await fetch(`https://dark-core-api.vercel.app/api/search/youtube?key=api&text=${text}`)).json();
+let api = await (await fetch(`https://delirius-apiofc.vercel.app/search/ytsearch?q=${text}`)).json();
 
-let results = api.results[0];
+let results = api.data[0];
 
-let txt = `✨ *Título:* ${results.title}\n📎 *Link:* ${results.url}\n🍭 *Canal:* ${results.channel}\n📆*Publicado:* ${results.published}`;
+let txt = `✨ *Título:* ${results.title}\n📎 *Link:* ${results.url}\n🍭 *Canal:* ${results.channel}\n📆*Publicado:* ${results.publishedAt}`;
 
-let img = results.thumbnail
+let img = results.image;
 
 conn.sendMessage(m.chat, { 
         image: { url: img }, 
