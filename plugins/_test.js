@@ -27,9 +27,9 @@ conn.sendMessage(m.chat, {
     }, { quoted: m });
 }
 
-handler.command = ['test'];
+WZ.command = ['test'];
 
-export default handler
+export default WZ
 
 
 
