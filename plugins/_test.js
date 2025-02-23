@@ -32,6 +32,3 @@ conn.sendMessage(m.chat, {
 handler.command = ['test'];
 
 export default handler
-
-
-
