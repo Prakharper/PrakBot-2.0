@@ -10,5 +10,7 @@ let api = await(await fetch(`https://dark-core-api.vercel.app/api/search/youtube
 
 let ST = `✨ *Título:* ${api.results.title}\n📎 *Link:* ${api.results.url}\n🍭 *Canal:* ${api.results.channel}\n📆*Publicado:* ${api.results.published}`;
 
-let img = api.results.thumb
+let img = api.results.thumbnail
+
+
 
