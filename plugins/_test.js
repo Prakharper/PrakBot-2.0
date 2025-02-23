@@ -2,7 +2,7 @@
 
 import fetch from 'node-fetch';
 
-let WZ = async(m, { conn, usedPrefix, command, text }) => {
+let handler = async(m, { conn, usedPrefix, command, text }) => {
 
 if (!text) return m.reply(m.chat, `🍭 Ingresa Un Texto Para Buscar En Youtube\n> *Ejemplo:* ${usedPrefix + command}crow edits`, m, rcanal);
 
@@ -27,9 +27,9 @@ conn.sendMessage(m.chat, {
     }, { quoted: m });
 }
 
-WZ.command = ['test'];
+handler.command = ['test'];
 
-export default WZ
+export default handler
 
 
 
