@@ -1,10 +1,8 @@
-// By WillZek 
-
 import fetch from 'node-fetch';
 
 let handler = async(m, { conn, usedPrefix, command, text }) => {
 
-if (!text) return m.reply(m.chat, `🍭 Ingresa Un Texto Para Buscar En Youtube\n> *Ejemplo:* ${usedPrefix + command}crow edits`, m, rcanal);
+if (!text) return m.reply(`🍭 Ingresa Un Texto Para Buscar En Youtube\n> *Ejemplo:* ${usedPrefix + command}crow edits`);
 
 try {
 let api = await (await fetch(`https://dark-core-api.vercel.app/api/search/youtube?key=api&text=${text}`)).json();
@@ -35,6 +33,6 @@ m.react('✖️');
   }
 }
 
-handler.command = ['test'];
+handler.command = ['wi'];
 
 export default handler
