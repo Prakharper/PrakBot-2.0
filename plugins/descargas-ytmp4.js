@@ -6,6 +6,7 @@ if (!text) return m.reply('🍭 Ingrese Un Link De YouTube\n> *Ejemplo:* https:/
 
 m.react(rwait);
 
+try {
 let apis = [ `https://api.alyachan.dev/api/ytv?url=${text}&apikey=Gata-Dios`,
 `https://api.fgmods.xyz/api/downloader/ytmp4?url=${text}&quality=480p&apikey=be9NqGwC`,
 `https://good-camel-seemingly.ngrok-free.app/download/mp4?url=${text}`,
@@ -37,7 +38,7 @@ let link = data?.url || download_url || result?.dl_url || downloads?.link
 let link = video?.data?.url || video?.download_url || video?.result?.dl_url || video?.downloads?.link
 */
 
-if (!link) return m.reply('No se pudo obtener el video.');
+// if (!link) return m.reply(`No se pudo obtener el video. ${e.message}`);
 
 await conn.sendMessage(m.chat, {
       video: { url: link },
@@ -45,6 +46,10 @@ await conn.sendMessage(m.chat, {
       caption: `${dev}`,
     }, { quoted: m });
     m.react(done);
+
+} catch (e) { 
+m.reply(`Error: ${e.message}`);
+  }
 }
 
 handler.command = ['ytv', 'ytmp4', 'ymp4']
