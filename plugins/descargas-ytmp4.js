@@ -1,52 +1,36 @@
 import fetch from 'node-fetch';
 
 let handler = async(m, { conn, args, text }) => {
-
-if (!text) return m.reply('🍭 Ingrese Un Link De YouTube\n> *Ejemplo:* https://youtube.com/shorts/ZisXJqH1jtw?si=0RZacIJU5zhoCmWh');
+    if (!text) return m.reply('🍭 Ingrese Un Link De YouTube\n> *Ejemplo:* https://youtube.com/shorts/ZisXJqH1jtw?si=0RZacIJU5zhoCmWh');
 
 m.react(rwait);
 
 try {
-let apis = [ `https://api.alyachan.dev/api/ytv?url=${text}&apikey=Gata-Dios`,
-`https://api.fgmods.xyz/api/downloader/ytmp4?url=${text}&quality=480p&apikey=be9NqGwC`,
-`https://good-camel-seemingly.ngrok-free.app/download/mp4?url=${text}`,
-`https://dark-core-api.vercel.app/api/download/ytmp4?key=api&url=${text}`
-];
+let apis = [
+            `https://api.alyachan.dev/api/ytv?url=${text}&apikey=Gata-Dios`,
+            `https://api.fgmods.xyz/api/downloader/ytmp4?url=${text}&quality=480p&apikey=be9NqGwC`,
+            `https://good-camel-seemingly.ngrok-free.app/download/mp4?url=${text}`,
+            `https://dark-core-api.vercel.app/api/download/ytmp4?key=api&url=${text}`
+        ];
 
-const res = await fetch(apis);
-const xd = res[0]
-const { data, result, downloads, download_url } = await xd.json();
+let link;
+for (let api of apis) {
+const res = await fetch(api);
+if (res.ok) {
+const json = await res.json();
+link = json.data?.url || json.download_url || json.result?.dl_url || json.downloads?.link;
+if (link) break;
+            }
+        }
 
-/*let video;
-try {
-      video = await (await fetch(`https://api.alyachan.dev/api/ytv?url=${text}&apikey=Gata-Dios`)).json();
-} catch (error) {
-try {
-      video = await (await fetch(`https://api.fgmods.xyz/api/downloader/ytmp4?url=${text}&quality=480p&apikey=be9NqGwC`)).json();
-} catch (error) {
-try {
-      video = await (await fetch(`https://good-camel-seemingly.ngrok-free.app/download/mp4?url=${text}`)).json();
-} catch (error) {
-      video = await (await fetch(`https://dark-core-api.vercel.app/api/download/ytmp4?key=api&url=${text}`)).json();
-      }
-    }
- }
-*/
-
-let link = data?.url || download_url || result?.dl_url || downloads?.link
-
-/*
-let link = video?.data?.url || video?.download_url || video?.result?.dl_url || video?.downloads?.link
-*/
-
-// if (!link) return m.reply(`No se pudo obtener el video. ${e.message}`);
+if (!link) return m.reply(`No se pudo obtener el video.`);
 
 await conn.sendMessage(m.chat, {
-      video: { url: link },
-      mimetype: "video/mp4",
-      caption: `${dev}`,
-    }, { quoted: m });
-    m.react(done);
+            video: { url: link },
+            mimetype: "video/mp4",
+            caption: `${dev}`,
+        }, { quoted: m });
+m.react(done);
 
 } catch (e) { 
 m.reply(`Error: ${e.message}`);
@@ -56,7 +40,6 @@ m.reply(`Error: ${e.message}`);
 handler.command = ['ytv', 'ytmp4', 'ymp4']
 
 export default handler;
-
 
 // *[ ❀ YTMP4 ]*
 /* import fetch from 'node-fetch';
