@@ -7,7 +7,7 @@ m.react(rwait);
 
 try {
 let apis = [
-            `https://api.alyachan.dev/api/ytv?url=${text}&apikey=Gata-Dios`,
+            `https://api.alyachan.dev/api/ytv?url=${text}&apikey=uXxd7d`,
             `https://api.fgmods.xyz/api/downloader/ytmp4?url=${text}&quality=480p&apikey=be9NqGwC`,
             `https://good-camel-seemingly.ngrok-free.app/download/mp4?url=${text}`,
             `https://dark-core-api.vercel.app/api/download/ytmp4?key=api&url=${text}`
