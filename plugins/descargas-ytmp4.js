@@ -14,7 +14,7 @@ let apis = [ `https://api.alyachan.dev/api/ytv?url=${text}&apikey=Gata-Dios`,
 ];
 
 const res = await fetch(apis);
-const { data, result, downloads, download_url } = await res.json();
+const { data, result, downloads, download_url } = await res[0].json();
 
 /*let video;
 try {
