@@ -33,24 +33,24 @@ href="https://github.com/PrakHarper/PrakBot-2.0/stargazers/"><img title="Stars" 
 [![Accounts](https://img.shields.io/badge/CUENTAS-000000%7D?style=for-the-badger&logo=biolink&logoColor=white)](https://www.atom.bio/crowbot-ofc)
 
 
-<a href="#"><img title="CrowBot" src="https://img.shields.io/badge/CROWBOT💛 | NIÑO PIÑA💛 | STARCORE 💛-blue?colorA=%23ff0000&colorB=%23000000&style=for-the-badge"></a>
+<a href="#"><img title="PrakBot" src="https://img.shields.io/badge/CROWBOT💙 | Prak Harper💙 | STARCORE 💙-Blue?colorA=%23ff0000&colorB=%23000000&style=for-the-badge"></a>
 </p>
 
 <!-- RAINBOW LINE BOT -->
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
 
 
-### **`Informacion Importante De CrowBot 🌠`**
+### **`Informacion Importante De PrakBot 🌠`**
 
 ![Menu Secundario](https://files.catbox.moe/ugr9af.jpg)
 
 <details>
  <summary><b>:paperclip: Links Importantes</b></summary>
 
-- **Comprar Token:** [`Aquí`](https://crow-bot-dashboard.vercel.app/)
+- **Comprar Token:** [`Aquí`](https://Prak-bot-dashboard.vercel.app/)
 - **Comunidad Oficial:** [`Aquí`](https://chat.whatsapp.com/BZ87KB4Igab3lCw6DAwPCR)
 - **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029Vb1AFK6HbFV9kaB3b13W)
-- **Propietario Del Bot:** [`Aqui`](https:/Wa.me/50557865603)
+- **Propietario Del Bot:** [`Aqui`](https:/Wa.me/584241836217)
 
 </details>
 
@@ -84,8 +84,8 @@ href="https://github.com/PrakHarper/PrakBot-2.0/stargazers/"><img title="Stars" 
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
 
 
-#### **`Creador: Niño Piña 🤴`**
-#### **`Hecho Por: Staff De CrowBot`**
+#### **`Creador: Prak Harper 🚀`**
+#### **`Hecho Por: Staff De PrakBot`**
 
 ### **`CONTACTOS 💻`**
 <p>
@@ -104,7 +104,7 @@ href="https://wa.me/50557865603?text="><img src="https://files.catbox.moe/44q2o7
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
 
  
-### 💛 **`OFC CROWBOT`**
+### 💙 **`OFC PRAKBOT`**
 
 > **CANAL Y GRUPO DEL BOT**
 
@@ -167,9 +167,9 @@ npm start
 </details>
 
 ---
-## **`🎩 HOSTINGS DE CALIDAD`**
+## **`🚀 HOSTINGS DE CALIDAD`**
 
-###  **`🍬 LUMINARY'S - HOSTING`**
+###  **`🧿 LUMINARY'S - HOSTING`**
 <a href="https://dash.masha-host.shop/home"><img src="https://qu.ax/aHudo.jpg" height="145px"></a>
 
 <details>
