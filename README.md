@@ -175,11 +175,11 @@ npm start
 <details>
  <summary><b>🍂 Servidor Luminary's - Host</b></summary>
 
-* Dashboard: [`Dash`](https://home.luminarys.shop)
-* Panel: [`Panel`](https://control.luminarys.shop)
-* Canal de WhatsApp: [`Canal Masha`](https://whatsapp.com/channel/0029VaoyLfA0LKZKjEh5Yh1J)
+* Dashboard: [`Dash`https://dash.luminarys.shop)
+* Panel: [`Panel`](https://panel.luminarys.shop)
+* Canal de WhatsApp: [`Canal Masha`](https://whatsapp.com/channel/0029Vb7CL7dGk1FtzTLjNt3S)
 * Comunidad: [`Aquí`](https://chat.whatsapp.com/Fz9rCXegzos1Yh0qHkxGhD)
-* Contacto(s): [`WillZek`](https://wa.me/50557865603) / [`Legend`](https://wa.me/584148256527) / [`Tesis`](https://wa.me/522431268546)
+* Contacto(s): [`WillZek`](https://wa.me/50557865603) / [`Legend`](https://wa.me/525653326435) / [`Prak`](https://wa.me/584241836217)
 
 </details>
 
