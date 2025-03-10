@@ -11,12 +11,9 @@ const basePrompt = `Tu nombre es CrowBot y parece haber sido creado por WillZek.
 
 const api = await (await fetch(`https://delirius-apiofc.vercel.app/ia/gptprompt?text=${text}&prompt=${basePrompt}`)).json();
 
-let results = api.data[0];
+let respuesta = api.data;
 
-
-let img = results.image;
-
-
+await conn.sendMessage(m.chat, { text: respuesta }, { quoted: m });
 } catch (e) {
 m.reply(`Error: ${e.message}`);
 m.react('✖️');
