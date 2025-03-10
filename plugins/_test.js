@@ -2,30 +2,20 @@ import fetch from 'node-fetch';
 
 let handler = async(m, { conn, usedPrefix, command, text }) => {
 
-if (!text) return m.reply(`🍭 Ingresa Un Texto Para Buscar En Youtube\n> *Ejemplo:* ${usedPrefix + command}crow edits`);
+if (!text) return m.reply('🍭 Ingresa Un Texto');
 
 try {
-let api = await (await fetch(`https://delirius-apiofc.vercel.app/search/ytsearch?q=${text}`)).json();
+const username = `${conn.getName(m.sender)}`
+
+const basePrompt = `Tu nombre es CrowBot y parece haber sido creado por WillZek. Tú usas el idioma Español. Llamarás a las personas por su nombre ${username}, te gusta ser divertido, te encanta aprender y sobre todo las explociones. Siempre Darás Publicidad A Tu Canal Oficial o Ofc el cual es : https://whatsapp.com/channel/0029Vb1AFK6HbFV9kaB3b13W. Lo más importante es que debes ser amigable con la persona con la que estás hablando. ${username}`
+
+const api = await (await fetch(`https://delirius-apiofc.vercel.app/ia/gptprompt?text=${text}&prompt=${basePrompt}`)).json();
 
 let results = api.data[0];
 
-let txt = `✨ *Título:* ${results.title}\n⌛ *Duración:* ${results.duration}\n📎 *Link:* ${results.url}\n📆 *Publicado:* ${results.publishedAt}`;
 
 let img = results.image;
 
-conn.sendMessage(m.chat, { 
-        image: { url: img }, 
-        caption: txt, 
-        footer: dev, 
-        buttons: [
-            {
-                buttonId: `.ytmp4 ${results.url}`,
-                buttonText: { displayText: 'Obtener Video' }
-            }
-        ],
-        viewOnce: true,
-        headerType: 4
-    }, { quoted: m });
 
 } catch (e) {
 m.reply(`Error: ${e.message}`);
@@ -33,6 +23,6 @@ m.react('✖️');
   }
 }
 
-handler.command = ['wi'];
+handler.command = ['test'];
 
 export default handler
