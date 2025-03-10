@@ -17,8 +17,7 @@ await conn.sendMessage(m.chat, { text: respuesta }, { quoted: m });
 } catch (e) {
 m.reply(`Error: ${e.message}`);
 m.react('✖️');
-  }
-}
+}}
 
 handler.command = ['test'];
 
