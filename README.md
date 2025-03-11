@@ -14,7 +14,7 @@ href="https://github.com/PrakHarper/PrakBot-2.0/stargazers/"><img title="Stars" 
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>   
 
-<a href="https://github.com/PrakHarper/PrakBot-2.0"><img src="https://cardivo.vercel.app/api?name=PrakBot&repo=PrakBot-2.0&description=Hola+Soy+PrakBot+Disfruta+del+Bot+De+WhatsApp.&image=https://telegra.ph/file/b346b44893d4613a72f98.jpg/revision/latest?cb=20200606024545&usqp=CAU&usqp=CAU&backgroundColor=%23ecf0f1&instagram=crowbot_wa&whatsapp=50557865603&tiktok=crow_legendario_bs&pattern=leaf&colorPattern=%23eaeaea" /><a>
+<a href="https://github.com/PrakHarper/PrakBot-2.0"><img src="https://cardivo.vercel.app/api?name=PrakBot&repo=PrakBot-2.0&description=Hola+Soy+PrakBot+Disfruta+del+Bot+De+WhatsApp.&image=https://telegra.ph/file/b346b44893d4613a72f98.jpg/revision/latest?cb=20200606024545&usqp=CAU&usqp=CAU&backgroundColor=%23ecf0f1&instagram=Prakbot_wa&whatsapp=50557865603&tiktok=Prak_legendario_bs&pattern=leaf&colorPattern=%23eaeaea" /><a>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com/?lines= Prak+lanzó ;Nueva+versión+2.0. ; By:+StarCore+Team;PrakBot+El+Mejor+Bot!&font=Fira%20Code&center=true&width=380&height=50&duration=2000&pause=500" alt="Example Usage - README Typing SVG">
@@ -30,7 +30,7 @@ href="https://github.com/PrakHarper/PrakBot-2.0/stargazers/"><img title="Stars" 
 [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.me/starcoreNinoPina)
 [![Patreon](https://img.shields.io/badge/Patreon-6C6C6C?style=for-the-badge&logo=patreon&logoColor=white)](https://nohay.com)
 [![Facebook Pijes](https://img.shields.io/badge/Facebook-3D9FFF?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=61570569047747)
-[![Accounts](https://img.shields.io/badge/CUENTAS-000000%7D?style=for-the-badger&logo=biolink&logoColor=white)](https://www.atom.bio/crowbot-ofc)
+[![Accounts](https://img.shields.io/badge/CUENTAS-000000%7D?style=for-the-badger&logo=biolink&logoColor=white)](https://www.atom.bio/Prakbot-ofc)
 
 
 <a href="#"><img title="PrakBot" src="https://img.shields.io/badge/PRAKBOT💙 | Prak Harper💙 | STARCORE 💙-Blue?colorA=%23ff0000&colorB=%23000000&style=for-the-badge"></a>
@@ -247,7 +247,7 @@ href="https://dahs.hostingpy.shop/home"><img src="https://files.catbox.moe/lr92z
 </a>
 
 ### **`🚀 𝘊𝘙𝘌𝘈𝘋𝘖𝘙`**
-![https://github.com/Prakharper](https://files.catbox.moe/p44sem.jpg)
+![https://github.com/Prakharper](https://files.catbox.moe/qd3mc8.jpg)
 
 > **`Solo Escribir Para Cosas Importantes`**
 
