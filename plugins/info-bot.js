@@ -66,7 +66,7 @@ conn.reply(m.chat, `*prakharper Es Mi Creador, Respeta!*`, m, rcanal, )
 }
 
 if (/^harper$/i.test(m.text)) {
-conn.reply(m.chat, `*Hola Eres Fan De* *PrakBot o Brawl Stars*
+conn.reply(m.chat, `*Hola ¿Eres Fan De* *PrakBot,LeviBot o DemonBot?*
 *Entonces Sigue El Canal Oficial!*
 > https://whatsapp.com/channel/0029Vb03dv95a23v1gG0gT24
  *Gracias por utilizar PrakBot-2.0* `, m, rcanal, )
