@@ -108,7 +108,7 @@ href="https://wa.me/584241836217?text="><img src="https://files.catbox.moe/o6uoc
 
 > **CANAL Y GRUPO DEL BOT**
 
-![Informacion](https://qu.ax/LgBRM.jpg)
+![Informacion](https://files.catbox.moe/npfs4c.jpg)
 
 ### **`🔗 OBTEN LOS ENLACES`**
 
