@@ -21,7 +21,7 @@ global.owner = [
 ]
 
 global.creadorbot = [
-   ['584241836217', 'prak', true],
+   ['573143681055', 'prak', true],
 ]
   
 
