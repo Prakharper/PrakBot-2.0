@@ -91,7 +91,7 @@ href="https://github.com/PrakHarper/PrakBot-2.0/stargazers/"><img title="Stars" 
 <p>
 
 <a
-href="https://wa.me/584241836217?text="><img src="https://files.catbox.moe/o6uocz.jpg" height="125px"></a>
+href="https://wa.me/573143681055?text="><img src="https://files.catbox.moe/o6uocz.jpg" height="125px"></a>
 
 <details>
 <summary><b> 💣 Contáctos</b></summary>
