@@ -96,7 +96,7 @@ href="https://wa.me/573143681055?text="><img src="https://files.catbox.moe/o6uoc
 <details>
 <summary><b> 💣 Contáctos</b></summary>
 
-- **Propietario:** [`Aquí`](https:/Wa.me/50557865603)
+- **Propietario:** [`Aquí`](https:/Wa.me/573143681055)
 
 </details>
 
