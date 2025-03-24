@@ -1,4 +1,4 @@
-//Crow-Crow
+//Prak-Prak
 const roles = {
 '*𝗡𝗼𝘃𝗮𝘁𝗼 V* 🍄': 0,
 '*𝗡𝗼𝘃𝗮𝘁𝗼 IV* 🍄': 2,
