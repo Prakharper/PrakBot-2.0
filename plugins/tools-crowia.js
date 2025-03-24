@@ -51,7 +51,7 @@ await conn.sendMessage(m.chat, {
         }
     }
 }, { quoted: m });
-            await m.react('🍭')
+            await m.react('🚀')
         } catch {
             await m.react(error)
             await conn.reply(m.chat, '✘ ChatGpT no puede responder a esa pregunta.', m, fake)
@@ -62,7 +62,7 @@ await conn.sendMessage(m.chat, {
 handler.help = ['crowbot *<texto>*']
 handler.tags = ['tools']
 handler.register = true
-handler.command = ['crowbot', 'CrowBot']
+handler.command = ['Prakbot', 'PrakBot']
 
 export default handler
 
