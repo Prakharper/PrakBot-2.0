@@ -17,7 +17,7 @@ const handler = async (m, { conn }) => {
     await conn.sendMessage(m.chat, {
         document: media,
         mimetype: mime,
-        fileName: `Crow.${mime.split('/')[1]}`
+        fileName: `Prak.${mime.split('/')[1]}`
     }, { quoted: m });
 
     let caption = `*Documento* ${formatBytes(media.length)}`;
