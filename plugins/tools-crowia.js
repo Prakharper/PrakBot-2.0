@@ -36,14 +36,14 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
             // Aquí ya no se enviará el mensaje intermedio, se envía directamente la respuesta
         //    await conn.reply(m.chat, response, m, fake)
 await conn.sendMessage(m.chat, { 
-    text: '*Crow:* ' + response,
+    text: '*Prak:* ' + response,
     contextInfo: {
         forwardingScore: 9999999,
         isForwarded: false, 
         externalAdReply: {
             showAdAttribution: true,
             containsAutoReply: true,
-            title: `ᥴr᥆ᥕ ᥲі ᑲᥡ ᥕіᥣᥣzᥱk`,
+            title: `Prak 2.0 ᑲᥡ Prak Harper`,
             body: dev,
             previewType: "PHOTO",
             thumbnailUrl: 'https://files.catbox.moe/v1l74n.jpg', 
