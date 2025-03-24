@@ -12,4 +12,4 @@
 
 > ¿Que Esperas Para Comprar Tu **[Token](https://crow-bot-dashboard.vercel.app/)**?
 
-© Powered By Staff De **[CrowBot](https://github.com/WillZek/CrowBot-ST)**
+© Powered By Staff De **[PrakBot](https://github.com/Prakharper/PrakBot-2.0)**
