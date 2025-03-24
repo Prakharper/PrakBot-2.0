@@ -24,7 +24,7 @@ const handler = async (m, { conn }) => {
 
 handler.help = ['regalo'];
 handler.tags = ['rpg'];
-handler.command = /^(regalo|regalocrow|crowregalo)$/i;
+handler.command = /^(regalo|regaloPrak|crowregalo)$/i;
 handler.fail = null;
 
 export default handler;
