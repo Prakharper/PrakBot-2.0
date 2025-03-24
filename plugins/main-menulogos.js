@@ -58,6 +58,6 @@ await conn.sendFile(m.chat, img, 'img.jpg', texto, fkontak)
 global.db.data.users[m.sender].lastcofre = new Date * 1
 }
 handler.help = ['menulogo (menu de logos)']
-handler.tags = ['crow']
+handler.tags = ['Prak']
 handler.command = ['menulogos', 'logos', 'menulogo'] 
 export default handler
