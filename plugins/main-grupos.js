@@ -25,6 +25,6 @@ await m.react(emojis)
 }
 handler.help = ['grupos']
 handler.tags = ['main']
-handler.command = ['grupos', 'crowgrupos', 'gruposcrow']
+handler.command = ['grupos', 'Prakgrupos', 'gruposprak']
 handler.estrellas = 5;
 export default handler
