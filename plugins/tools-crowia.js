@@ -59,7 +59,7 @@ await conn.sendMessage(m.chat, {
     }
 }
 
-handler.help = ['crowbot *<texto>*']
+handler.help = ['Prakbot *<texto>*']
 handler.tags = ['tools']
 handler.register = true
 handler.command = ['Prakbot', 'PrakBot']
