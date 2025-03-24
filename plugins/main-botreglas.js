@@ -1,4 +1,4 @@
-// Reglas Para CrowBot
+// Reglas Para PrakBot
 
 let handler = async (m, { conn, usedPrefix, command }) => {
     let img = "/Menu.jpg"; // Asegúrate de que esta imagen esté en la ruta correcta
