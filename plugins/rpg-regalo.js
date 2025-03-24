@@ -12,9 +12,9 @@ const handler = async (m, { conn }) => {
 
     const user = global.db.data.users[m.sender];
     
-    conn.sendMessage(m.chat, {text: `🎩 *@${m.sender.split('@')[0]} CrowBot Te Ha Regalado:*\n> 🌟 200 Estrellas\n> 💶 100 Experiencia\n> 🪙 200 PrakCoins`, mentions: [m.sender]}, {quoted: fkontak});
+    conn.sendMessage(m.chat, {text: `🎩 *@${m.sender.split('@')[0]} PrakBot Te Ha Regalado:*\n> 🌟 200 Estrellas\n> 💶 100 Experiencia\n> 🪙 200 PrakCoins`, mentions: [m.sender]}, {quoted: fkontak});
 
-    // Aquí La Moneda Crow Es Estrellas, Ustedes La Pueden Cambiar Por Los Datos De las monedas de sus bots pijes
+    // Aquí La Moneda Ptak Es Estrellas, Ustedes La Pueden Cambiar Por Los Datos De las monedas de sus bots pijes
     user.money += 200;
     user.estrellas += 200;
     user.exp += 100;
