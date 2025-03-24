@@ -56,7 +56,7 @@ setTimeout(resolve, 1000)
 let timestamp = speed()
 let latensi = speed() - timestamp
 let PrakBot = `╭─⬣「 *Info De 𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛* 」⬣\n`
-CrowBot += `│ 👑 *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}\n`
+PrakBot += `│ 👑 *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}\n`
 PrakBot += `│ 🍭 *Prefijo* : [  ${usedPrefix}  ]\n`
 PrakBot += `│ 📦 *Total Plugins* : ${totalf}\n`
 PrakBot += `│ 💫 *Plataforma* : ${platform()}\n`
