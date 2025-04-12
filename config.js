@@ -20,7 +20,7 @@ global.owner = [
    ['', 'Joker Bot OFF', true],
 ]
 
-global.creadorbot = [
+global.creadorbot = [573024864635
    ['573143681055', 'prak', true],
 ]
   
