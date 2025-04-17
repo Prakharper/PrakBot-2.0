@@ -3,7 +3,7 @@ import { webp2png } from '../lib/webp2mp4.js'
 var handler = async (m, { conn, usedPrefix, command }) => {
 
 const notStickerMessage = `*🌳 Responda a una imagen*`
-if (!m.quoted) throw notStickerMessage 
+if (!m.quoted) return m.reply(notStickerMessage);
 const q = m.quoted || m
 let mime = q.mediaType || ''
 if (!/sticker/.test(mime)) throw notStickerMessage
