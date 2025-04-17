@@ -1,4 +1,4 @@
-import { collection, getDocs, query, orderBy } from "firebase/firestore";
+/* import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { db } from "../database/clanes-db.js";
 
 const handler = async (m, { conn, command, text, args }) => {
@@ -40,3 +40,4 @@ const handler = async (m, { conn, command, text, args }) => {
 handler.tags = ['clanes'];
 handler.help = handler.command = ["topc"];
 export default handler;
+*/
