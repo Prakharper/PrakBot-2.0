@@ -6,7 +6,7 @@ const notStickerMessage = `*🌳 Responda a una imagen*`
 if (!m.quoted) return m.reply(notStickerMessage);
 const q = m.quoted || m
 let mime = q.mediaType || ''
-if (!/sticker/.test(mime)) throw notStickerMessage
+if (!/sticker/.test(mime)) return m.reply(notStickerMessage)
 conn.reply(m.chat, wait, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
 title: packname,
