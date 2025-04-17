@@ -10,7 +10,7 @@ import fetch from 'node-fetch'
 const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/baileys')).default
 
 const defaultMenu = {
-  before: `“${emojis}¡Hola! *%name*, a qui esta mi menu de herramientas"
+  before: `“💥 ¡Hola! *%name*, a qui esta mi menu de herramientas"
 
 *─ׄ─ׄ─⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׅ──ׄ*
 %readmore
@@ -24,7 +24,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
 'tools': 'MenuTools',
 }
-let img = 'https://files.catbox.moe/w3s79j.jpg'
+// let img = 'https://files.catbox.moe/w3s79j.jpg'
+let img = './media/catalogo.jpg';
 
   try {
           // DEFAULT MENU
@@ -181,7 +182,7 @@ await m.react('⚙️')
         text: text,
         contextInfo: {
         externalAdReply: {
-        title: 'MENU DE HERRAMIENTAS',
+        title: '𓂂𓏸  𐅹੭੭ ᴍᴇɴᴜ ᴅᴇ ᴛᴏᴏʟs 🌙 ᦡᦡ',
         body: dev,
         thumbnailUrl: img,
         sourceUrl: channel,
