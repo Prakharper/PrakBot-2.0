@@ -5,7 +5,7 @@ handler.command = /^(tenerunbot)$/i;
 handler.tags =['main'] 
 handler.help = ['tenerunbot <el bot para tu grupo>'] 
 export default handler;
-global.text =``*¿QUIERES A 𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛ EN TU GRUPOS?*`🚀 
+global.text = `*¿QUIERES A 𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛ EN TU GRUPOS?*`🚀 
 
 !! *¡Sencillo!, lo único que pedimos :*!!
 
