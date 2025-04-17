@@ -1,11 +1,5 @@
 const handler = async (m, {conn}) => {
-  m.reply(global.text);
-};
-handler.command = /^(tenerunbot)$/i;
-handler.tags =['main'] 
-handler.help = ['tenerunbot <el bot para tu grupo>'] 
-export default handler;
-global.text = `*¿QUIERES A 𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛ EN TU GRUPOS?*`🚀 
+const texto = `*¿QUIERES A 𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛ EN TU GRUPOS?*`🚀 
 
 !! *¡Sencillo!, lo único que pedimos :*!!
 
@@ -18,4 +12,11 @@ Q haga  que 10 amigos o conocidos sigan el canal, una vez que lo hagan le dices 
 *Link de canal que deben seguir* 👇
 
 https://whatsapp.com/channel/0029VagYdbFEwEk5htUejk0t
-`;
+`.trim();
+
+  m.reply(texto);
+};
+handler.command = /^(tenerunbot)$/i;
+handler.tags =['main'] 
+handler.help = ['tenerunbot <el bot para tu grupo>'] 
+export default handler;
