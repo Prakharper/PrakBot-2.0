@@ -1,4 +1,4 @@
-import { doc, getDoc, updateDoc, getDocs, collection } from "firebase/firestore";
+/* import { doc, getDoc, updateDoc, getDocs, collection } from "firebase/firestore";
 import { db } from "../database/clanes-db.js";
 
 const handler = async (m, { conn, isROwner, args, command, usedPrefix }) => {
@@ -176,3 +176,4 @@ const handler = async (m, { conn, isROwner, args, command, usedPrefix }) => {
 handler.tags = ['clanes'];
 handler.help = handler.command = ['cset'];
 export default handler;
+*/
