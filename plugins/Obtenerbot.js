@@ -1,5 +1,5 @@
 const handler = async (m, {conn}) => {
-const texto = `*¿QUIERES A 𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛ EN TU GRUPOS?*`🚀 
+const texto = `*¿QUIERES A 𝗣⃪᪼ۖ⃖𝐑𝗔̷̷͠𝐊 𝖡̶⃨͠𝐎𝗧ۚ𖬲็̹͛ EN TU GRUPOS?*🚀 
 
 !! *¡Sencillo!, lo único que pedimos :*!!
 
