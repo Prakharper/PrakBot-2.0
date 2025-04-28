@@ -44,6 +44,7 @@
 "axios": "^1.1.2",
 "ws": "latest",
 "@hiudyy/ytdl": "latest",
+"canvafy": "^7.2.0",
 "acrcloud": "^1.4.0",
 "form-data": "^4.0.0",
 "cfonts": "^3.3.0",
