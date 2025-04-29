@@ -42,6 +42,11 @@ export async function before(m, { conn, participants, groupMetadata }) {
     groupSize--;
   }
 
+const despMessage = global.db.data.chats[m.chat]?.despMessage || 'Se Fue😹';
+
+  const welcomeMessage = global.db.data.chats[m.chat]?.welcomeMessage || 'Bienvenido/a :';
+
+
   if (chat.welcome && m.messageStubType == 27) {
     let bienvenida = `┌─★ 𝐏𝐫𝐚𝐤𝐁𝐨𝐭-2.0\n│「 Bienvenido 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │🚀 ${welcomeMessage}\n   │🚀  ${groupMetadata.subject}\n   └───────────────┈ ⳹\n> ${dev}`
 
