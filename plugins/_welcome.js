@@ -16,7 +16,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
     try {
       return await conn.profilePictureUrl(m.messageStubParameters[0], 'image');
     } catch (err) {
-      return 'https://i.ibb.co/cFzgdNw/file.jpg';
+      return 'https://cdnmega.vercel.app/media/I1JhGYTT@ACqE47ZFEdN5fJqJf_MSf1JP_yL3pocjDxiNfEMVzsw';
     }
   };
 
@@ -48,7 +48,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
     let img = await generateImage(
       '¡BIENVENIDO/A!',
       `Disfruta de tu estadía. Ahora somos ${groupSize} miembros.`,
-      'https://i.ibb.co/1fVJfvxk/file.jpg'
+      'https://cdnmega.vercel.app/media/I1JhGYTT@ACqE47ZFEdN5fJqJf_MSf1JP_yL3pocjDxiNfEMVzsw'
     );
 
     await conn.sendMini(m.chat, packname, null, bienvenida, img, img, channel, null);
@@ -59,7 +59,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
     let img = await generateImage(
       '¡HASTA LUEGO!',
       `Nos vemos pronto. Ahora somos ${groupSize} miembros.`,
-      'https://i.ibb.co/Kcf0xdrQ/file.jpg'
+      'https://cdnmega.vercel.app/media/I1JhGYTT@ACqE47ZFEdN5fJqJf_MSf1JP_yL3pocjDxiNfEMVzsw'
     );
 
     await conn.sendMini(m.chat, packname, null, bye, img, img, channel, null);
@@ -71,7 +71,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
     let img = await generateImage(
       '¡HASTA LUEGO!',
       `Nos vemos pronto. Ahora somos ${groupSize} miembros.`,
-      'https://i.ibb.co/Kcf0xdrQ/file.jpg'
+      'https://cdnmega.vercel.app/media/I1JhGYTT@ACqE47ZFEdN5fJqJf_MSf1JP_yL3pocjDxiNfEMVzsw'
     );
 
     await conn.sendMini(m.chat, packname, null, kick, img, img, channel, null);
