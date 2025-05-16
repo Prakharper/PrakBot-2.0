@@ -41,6 +41,7 @@
 "awesome-phonenumber": "^3.4.0",
 "ruhend-scraper": "^7.0.4",
 "gradient-string": "^2.0.2",
+"node-cache": "^5.1.2",
 "axios": "^1.1.2",
 "ws": "latest",
 "@hiudyy/ytdl": "latest",
