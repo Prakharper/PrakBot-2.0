@@ -10,11 +10,11 @@
 "plugins": "plugins"
 },
 "scripts": {
-"start": "node index.js",
-"qr": "node index.js qr",
-"code": "node index.js code",
+"start": "node starcore.js",
+"qr": "node starcore.js qr",
+"code": "node starcore.js code",
 "test": "node test.js",
-"test2": "nodemon index.js", 
+"test2": "nodemon starcore.js", 
 "eslint": "eslint .",
 "eslintfix": "eslint --fix ."
 },
