@@ -1,6 +1,6 @@
 // Código Creado Por Sisked 
 
-import {Maker} from 'imagemaker.js';
+/* import {Maker} from 'imagemaker.js';
 const handler = async (m, {conn, args, command, usedPrefix}) => {
   const response = args.join(' ').split('|');
   if (!args[0]) throw '*[❗] 𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙏𝙀𝙓𝙏𝙊*';
@@ -341,3 +341,4 @@ handler.tags = ['logos']
 handler.command = /^logocorazon|logochristmas|logopareja|logoglitch|logosad|logogaming|logosolitario|logodragonball|logoneon|logogatito|logochicagamer|logonaruto|logofuturista|logonube|logoangel|logomurcielago|logocielo|logograffiti3d|logomatrix|logohorror|logoalas|logoarmy|logopubg|logopubgfem|logolol|logoamongus|logovideopubg|logovideotiger|logovideointro|logovideogaming|logoguerrero|logoportadaplayer|logoportadaff|logoportadapubg|logoportadacounter/i;
 handler.estrellas = 20;
 export default handler;
+*/
